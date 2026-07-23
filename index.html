@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Политика конфиденциальности приложения Volleyball Match — табло для волейбольных матчей. Privacy Policy" />
+  <meta name="description" content="Политика конфиденциальности приложения Volleyball Match — табло для волейбольных матчей. Privacy Policy / Gizlilik Politikası" />
   <title>Privacy Policy — Volleyball Match</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -92,6 +92,7 @@
       justify-content: center;
       gap: 8px;
       margin-top: 28px;
+      flex-wrap: wrap;
     }
 
     .lang-btn {
@@ -344,10 +345,11 @@
 <header>
   <span class="header-icon">🏐</span>
   <h1>Volleyball Match</h1>
-  <p class="header-subtitle">Privacy Policy / Политика конфиденциальности</p>
+  <p class="header-subtitle">Privacy Policy / Политика конфиденциальности / Gizlilik Politikası</p>
   <div class="lang-switch">
     <button class="lang-btn active" id="btn-ru" onclick="switchLang('ru')">🇷🇺 Русский</button>
     <button class="lang-btn" id="btn-en" onclick="switchLang('en')">🇬🇧 English</button>
+    <button class="lang-btn" id="btn-tr" onclick="switchLang('tr')">🇹🇷 Türkçe</button>
   </div>
 </header>
 
@@ -729,6 +731,195 @@
 
   </div><!-- /en -->
 
+  <!-- ══════════════════ TURKISH ══════════════════ -->
+  <div data-lang="tr">
+
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Yürürlük tarihi: 29 Mayıs 2025</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Son güncelleme: 29 Mayıs 2025</div>
+    </div>
+
+    <section>
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-icon">👋</div>
+          <h2>Giriş</h2>
+        </div>
+        <p>
+          <strong>Volleyball Match</strong> uygulamasına hoş geldiniz — voleybol maçlarının güncel skorunu görüntülemek
+          için tasarlanmış bir mobil puan tablosu uygulaması. Uygulama, spor etkinlikleri için bağımsız bir araç olarak
+          tasarlanmıştır ve hesap oluşturmayı gerektirmez.
+        </p>
+        <p>
+          Bu Gizlilik Politikası, uygulamanın hangi verileri topladığını (veya toplamadığını) ve bunların nasıl
+          kullanıldığını açıklar. Lütfen bunu dikkatle okuyun.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-icon">🚫</div>
+          <h2>Kişisel Veriler</h2>
+        </div>
+        <div class="highlight">
+          <span class="highlight-icon">✅</span>
+          <p>
+            <strong>Volleyball Match, kullanıcı kişisel verilerini toplamaz, iletmez veya depolamaz.</strong>
+            Kişisel bilgileri izlemek için üçüncü taraf SDK'lar kullanmıyor ve kişisel veriler toplamak için harici
+            hizmetlere bağlanmıyoruz.
+          </p>
+        </div>
+        <p style="margin-top:16px;">
+          Tüm kullanıcı tercihler (puan ve maç ayarları gibi) tamamen cihazınızda standart Shared Preferences mekanizması
+          kullanılarak saklanır ve hiçbir yere gönderilmez.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-icon">🔑</div>
+          <h2>Uygulama İzinleri</h2>
+        </div>
+        <p>Belirli uygulama özellikleri aşağıdaki cihaz izinlerini gerektirir:</p>
+        <ul class="perm-list">
+          <li class="perm-item">
+            <span class="perm-icon">📷</span>
+            <div>
+              <div class="perm-name">Kamera</div>
+              <div class="perm-desc">
+                Başka bir cihazı yerel ağ üzerinden yayın görüntüsü olarak bağlarken QR kodları taramak için kullanılır.
+                Kamera videosu hiçbir zaman kaydedilmez veya iletilmez.
+              </div>
+            </div>
+          </li>
+          <li class="perm-item">
+            <span class="perm-icon">📡</span>
+            <div>
+              <div class="perm-name">Yerel Ağ Erişimi (Wi-Fi)</div>
+              <div class="perm-desc">
+                Skor yayını özelliği için kullanılır: uygulama, aynı ağdaki başka bir cihazın bağlanabileceği yerel
+                bir WebSocket sunucusu oluşturur. Bağlantı yalnızca yerel ağınız içinde çalışır; İnternet'e veri
+                gönderilmez.
+              </div>
+            </div>
+          </li>
+          <li class="perm-item">
+            <span class="perm-icon">💡</span>
+            <div>
+              <div class="perm-name">Ekranı Açık Tut (Wakelock)</div>
+              <div class="perm-desc">
+                Maç sırasında cihaz ekranını açık tutar, böylece puan tablosu her zaman görülebilir.
+              </div>
+            </div>
+          </li>
+          <li class="perm-item">
+            <span class="perm-icon">🔊</span>
+            <div>
+              <div class="perm-name">Ses</div>
+              <div class="perm-desc">
+                Uygulama, cihazda depolanan yerel ses dosyalarını (düdük sesi) oynatır.
+                Mikrofon hiçbir zaman kullanılmaz.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-icon">🌐</div>
+          <h2>Ağ Aktivitesi</h2>
+        </div>
+
+        <div class="data-subsection">
+          <h3>🔒 Yerel Ağ</h3>
+          <p>
+            Uygulama <strong>yerel WebSocket sunucusu</strong> yalnızca "Yayın" özelliği etkinleştirildiğinde oluşturur.
+            Sunucu tamamen ev veya ofis ağınız (LAN/Wi-Fi) içinde çalışır. Hiçbir zaman yerel ağı terk eden veri yoktur.
+          </p>
+          <p>
+            Yerel ağdaki cihaz keşfi, mDNS/Bonjour protokolü (Bonsoir kütüphanesi) aracılığıyla gerçekleştirilir.
+          </p>
+        </div>
+
+        <div class="data-subsection">
+          <h3>📊 Analitik ve Hata Ayıklama</h3>
+          <p>
+            Uygulama, ürün kalitesini iyileştirmek amacıyla <strong>anonimleştirilmiş analitik veriler</strong> ve
+            <strong>hata ayıklama bilgileri</strong> uzak sunuculara iletmek için İnternet bağlantısını kullanır.
+          </p>
+          <p>
+            İletilen veriler şunları içerir:
+          </p>
+          <ul style="margin: 8px 0 6px 20px; font-size: 0.8125rem; color: var(--text-secondary);">
+            <li>Genel uygulama kullanım olayları (başlatma, özellik aktivasyonu)</li>
+            <li>Hata ve çökme bilgileri</li>
+            <li>Performans metrikleri (yanıt süresi, kaynak kullanımı)</li>
+            <li>Cihaz bilgileri (OS sürümü, model, dil)</li>
+          </ul>
+          <p>
+            <strong>Bu veriler kişisel bilgiler içermez</strong> (ad, iletişim, maç içeriği).
+            Tüm veriler anonimleştirilir ve yalnızca istatistiksel amaçlar için kullanılır.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-icon">👶</div>
+          <h2>Çocuklar</h2>
+        </div>
+        <p>
+          Uygulama özellikle çocuklara yönelik değildir, ancak her yaştan kişiler tarafından spor etkinliklerinde
+          kullanılabilir. Uygulama çocuklardan kişisel veriler toplamadığı için, özel çocuk veri korumaları
+          (COPPA / GDPR-K) gerekli değildir.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-icon">📝</div>
+          <h2>Politika Değişiklikleri</h2>
+        </div>
+        <p>
+          Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu URL'de mevcuttur.
+          Son değişikliğin tarihi bu sayfanın üst kısmında gösterilir.
+        </p>
+        <p>
+          Değişiklikler önemliyse, App Store ve Google Play'deki uygulama açıklamasında bir bildirim yayınlayacağız.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-icon">✉️</div>
+          <h2>Bize Ulaşın</h2>
+        </div>
+        <p>
+          Bu Gizlilik Politikası hakkında veya uygulamanın nasıl çalıştığı hakkında sorularınız varsa,
+          bize ulaşabilirsiniz:
+        </p>
+        <p>
+          📧 <a class="contact-link" href="mailto:braginsm@gmail.com">braginsm@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+  </div><!-- /tr -->
+
 </main>
 
 <footer>
@@ -753,7 +944,7 @@
   // Restore preferred language
   try {
     const saved = localStorage.getItem('pp_lang');
-    if (saved && (saved === 'ru' || saved === 'en')) switchLang(saved);
+    if (saved && (saved === 'ru' || saved === 'en' || saved === 'tr')) switchLang(saved);
   } catch(e) {}
 </script>
 </body>
