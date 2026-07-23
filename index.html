@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Политика конфиденциальности приложения Volleyball Match — табло для волейбольных матчей. Privacy Policy for Volleyball Match scoreboard app." />
+  <meta name="description" content="Политика конфиденциальности приложения Volleyball Match — табло для волейбольных матчей. Privacy Policy" />
   <title>Privacy Policy — Volleyball Match</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -258,6 +258,34 @@
       font-size: 0.9rem;
     }
 
+    /* ─── DATA SUBSECTION ────────────────────────────────── */
+    .data-subsection {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      margin-top: 12px;
+    }
+
+    .data-subsection h3 {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .data-subsection p {
+      font-size: 0.8125rem;
+      margin-bottom: 6px;
+    }
+
+    .data-subsection p:last-child {
+      margin-bottom: 0;
+    }
+
     /* ─── CONTACT ────────────────────────────────────────── */
     .contact-link {
       display: inline-flex;
@@ -342,7 +370,7 @@
         <p>
           Добро пожаловать в <strong>Volleyball Match</strong> — мобильное приложение-табло для отображения
           текущего счёта волейбольных матчей. Приложение разработано как одиночный инструмент для спортивных
-          мероприятий и не требует создания аккаунта или подключения к интернету.
+          мероприятий и не требует создания аккаунта.
         </p>
         <p>
           Настоящая Политика конфиденциальности описывает, какие данные собирает (или не собирает) приложение
@@ -355,13 +383,13 @@
       <div class="section-card">
         <div class="section-header">
           <div class="section-icon">🚫</div>
-          <h2>Мы не собираем ваши данные</h2>
+          <h2>Персональные данные</h2>
         </div>
         <div class="highlight">
           <span class="highlight-icon">✅</span>
           <p>
             <strong>Volleyball Match не собирает, не передаёт и не хранит никаких персональных данных пользователей.</strong>
-            Мы не ведём аналитику, не используем сторонние SDK для отслеживания и не подключаемся к внешним серверам.
+            Мы не используем сторонние SDK для отслеживания личной информации и не подключаемся к внешним сервисам для сбора персональных данных.
           </p>
         </div>
         <p style="margin-top:16px;">
@@ -429,16 +457,39 @@
           <div class="section-icon">🌐</div>
           <h2>Сетевая активность</h2>
         </div>
-        <p>
-          Приложение не подключается к интернету и не взаимодействует с удалёнными серверами.
-          Единственная сетевая активность — это <strong>локальный WebSocket-сервер</strong>, который создаётся
-          только при активации функции «Трансляция» и работает исключительно в вашей домашней или
-          офисной сети (LAN/Wi-Fi).
-        </p>
-        <p>
-          Обнаружение устройств в локальной сети осуществляется через протокол mDNS/Bonjour (библиотека Bonsoir).
-          Никакие данные при этом не покидают локальную сеть.
-        </p>
+        
+        <div class="data-subsection">
+          <h3>🔒 Локальная сеть</h3>
+          <p>
+            Приложение создаёт <strong>локальный WebSocket-сервер</strong> только при активации функции «Трансляция».
+            Сервер работает исключительно в вашей домашней или офисной сети (LAN/Wi-Fi). Никакие данные при этом не выходят в интернет.
+          </p>
+          <p>
+            Обнаружение устройств в локальной сети осуществляется через протокол mDNS/Bonjour (библиотека Bonsoir).
+          </p>
+        </div>
+
+        <div class="data-subsection">
+          <h3>📊 Аналитика и отладка</h3>
+          <p>
+            Приложение использует интернет-соединение для передачи <strong>обезличенных аналитических данных</strong> и
+            <strong>отладочной информации</strong> на удалённые серверы в целях улучшения качества продукта.
+          </p>
+          <p>
+            Передаваемые данные включают:
+          </p>
+          <ul style="margin: 8px 0 6px 20px; font-size: 0.8125rem; color: var(--text-secondary);">
+            <li>Общие события использования приложения (запуск, активация функций)</li>
+            <li>Сведения об ошибках и сбоях</li>
+            <li>Информацию о производительности (время отклика, использование ресурсов)</li>
+            <li>Сведения об устройстве (версия OS, модель, язык)</li>
+          </ul>
+          <p>
+            <strong>Эти данные не содержат личную информацию</strong> (имя, контакты, содержание матчей).
+            Все данные обезличены и используются только в статистических целях.
+          </p>
+        </div>
+
       </div>
     </section>
 
@@ -450,8 +501,8 @@
         </div>
         <p>
           Приложение не предназначено специально для детей, однако может использоваться на спортивных
-          мероприятиях в любом возрасте. Поскольку приложение не собирает никаких данных, особые меры защиты
-          детских данных (COPPA / GDPR-K) не требуются.
+          мероприятиях в любом возрасте. Поскольку приложение не собирает персональные данные детей,
+          специальные меры защиты детских данных (COPPA / GDPR-K) не требуются.
         </p>
       </div>
     </section>
@@ -507,8 +558,7 @@
         </div>
         <p>
           Welcome to <strong>Volleyball Match</strong> — a mobile scoreboard application for displaying the
-          current score of volleyball games. The app is designed as a standalone tool for sporting events
-          and does not require account creation or an internet connection.
+          current score of volleyball games. The app is designed as a standalone tool for sporting events.
         </p>
         <p>
           This Privacy Policy describes what data the application collects (or does not collect) and how it
@@ -521,13 +571,13 @@
       <div class="section-card">
         <div class="section-header">
           <div class="section-icon">🚫</div>
-          <h2>We do not collect your data</h2>
+          <h2>Personal Data</h2>
         </div>
         <div class="highlight">
           <span class="highlight-icon">✅</span>
           <p>
             <strong>Volleyball Match does not collect, transmit, or store any personal user data.</strong>
-            We do not use analytics, third-party tracking SDKs, or connect to external servers.
+            We do not use third-party tracking SDKs or connect to external services for collecting personal information.
           </p>
         </div>
         <p style="margin-top:16px;">
@@ -595,15 +645,39 @@
           <div class="section-icon">🌐</div>
           <h2>Network Activity</h2>
         </div>
-        <p>
-          The app does not connect to the internet or interact with remote servers. The only network
-          activity is a <strong>local WebSocket server</strong> that is created only when the "Broadcast"
-          feature is activated and operates solely within your home or office network (LAN/Wi-Fi).
-        </p>
-        <p>
-          Device discovery on the local network is performed via mDNS/Bonjour (Bonsoir library).
-          No data leaves the local network at any time.
-        </p>
+
+        <div class="data-subsection">
+          <h3>🔒 Local Network</h3>
+          <p>
+            The app creates a <strong>local WebSocket server</strong> only when the "Broadcast" feature is activated.
+            The server operates solely within your home or office network (LAN/Wi-Fi). No data leaves the local network at any time.
+          </p>
+          <p>
+            Device discovery on the local network is performed via mDNS/Bonjour (Bonsoir library).
+          </p>
+        </div>
+
+        <div class="data-subsection">
+          <h3>📊 Analytics and Debugging</h3>
+          <p>
+            The app uses internet connectivity to transmit <strong>anonymized analytics data</strong> and
+            <strong>debug information</strong> to remote servers for the purpose of improving product quality.
+          </p>
+          <p>
+            The transmitted data includes:
+          </p>
+          <ul style="margin: 8px 0 6px 20px; font-size: 0.8125rem; color: var(--text-secondary);">
+            <li>General app usage events (startup, feature activation)</li>
+            <li>Error and crash information</li>
+            <li>Performance metrics (response time, resource usage)</li>
+            <li>Device information (OS version, model, language)</li>
+          </ul>
+          <p>
+            <strong>This data does not contain personal information</strong> (name, contacts, match content).
+            All data is anonymized and used only for statistical purposes.
+          </p>
+        </div>
+
       </div>
     </section>
 
@@ -615,8 +689,8 @@
         </div>
         <p>
           The app is not specifically targeted at children, but may be used at sporting events by people
-          of all ages. Because the app collects no data, no special child data protections (COPPA / GDPR-K)
-          are required.
+          of all ages. Because the app does not collect personal data from children, no special child data protections
+          (COPPA / GDPR-K) are required.
         </p>
       </div>
     </section>
