@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Политика конфиденциальности приложения Volleyball Match — табло для волейбольных матчей. Privacy Policy / Gizlilik Politikası" />
+  <meta name="description" content="Privacy Policy for Volleyball Match — scoreboard, cloud team sync, and live match broadcast app." />
   <title>Privacy Policy — Volleyball Match</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,17 +22,8 @@
       --radius: 12px;
       --radius-sm: 8px;
     }
-
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background: var(--bg);
@@ -40,17 +31,14 @@
       line-height: 1.7;
       min-height: 100vh;
     }
-
-    /* ─── HEADER ─────────────────────────────────────────── */
     header {
       background: linear-gradient(135deg, #1a1f2e 0%, #0d1117 60%);
       border-bottom: 1px solid var(--border);
-      padding: 60px 24px 48px;
+      padding: 56px 24px 40px;
       text-align: center;
       position: relative;
       overflow: hidden;
     }
-
     header::before {
       content: '';
       position: absolute;
@@ -60,7 +48,6 @@
         radial-gradient(ellipse 400px 200px at 80% 100%, rgba(244, 165, 35, 0.06), transparent);
       pointer-events: none;
     }
-
     .header-icon {
       font-size: 56px;
       line-height: 1;
@@ -68,7 +55,6 @@
       display: block;
       filter: drop-shadow(0 0 24px rgba(244, 165, 35, 0.5));
     }
-
     header h1 {
       font-size: clamp(1.75rem, 4vw, 2.5rem);
       font-weight: 700;
@@ -79,57 +65,34 @@
       background-clip: text;
       margin-bottom: 8px;
     }
-
-    .header-subtitle {
-      color: var(--text-secondary);
-      font-size: 1rem;
-      font-weight: 400;
-    }
-
-    /* ─── LANG SWITCHER ──────────────────────────────────── */
+    .header-subtitle { color: var(--text-secondary); font-size: 1rem; font-weight: 400; }
     .lang-switch {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 8px;
-      margin-top: 28px;
-      flex-wrap: wrap;
+      max-width: 820px;
+      margin: 24px auto 0;
     }
-
     .lang-btn {
-      padding: 6px 20px;
+      padding: 6px 14px;
       border-radius: 20px;
       border: 1px solid var(--border);
       background: transparent;
       color: var(--text-secondary);
       font-family: inherit;
-      font-size: 0.875rem;
+      font-size: 0.8125rem;
       font-weight: 500;
       cursor: pointer;
       transition: all 0.2s ease;
     }
-
-    .lang-btn.active,
-    .lang-btn:hover {
+    .lang-btn.active, .lang-btn:hover {
       background: var(--accent-dim);
       border-color: rgba(244, 165, 35, 0.4);
       color: var(--accent);
     }
-
-    /* ─── MAIN LAYOUT ────────────────────────────────────── */
-    main {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    /* ─── META BAR ───────────────────────────────────────── */
-    .meta-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 40px;
-    }
-
+    main { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+    .meta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
     .meta-chip {
       display: flex;
       align-items: center;
@@ -141,16 +104,7 @@
       font-size: 0.8125rem;
       color: var(--text-secondary);
     }
-
-    .meta-chip span.icon {
-      font-size: 0.9rem;
-    }
-
-    /* ─── SECTION ────────────────────────────────────────── */
-    section {
-      margin-bottom: 36px;
-    }
-
+    section { margin-bottom: 36px; }
     .section-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -158,18 +112,8 @@
       padding: 28px 32px;
       transition: border-color 0.2s ease;
     }
-
-    .section-card:hover {
-      border-color: rgba(244, 165, 35, 0.2);
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
+    .section-card:hover { border-color: rgba(244, 165, 35, 0.2); }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
     .section-icon {
       width: 36px;
       height: 36px;
@@ -181,32 +125,10 @@
       font-size: 1.1rem;
       flex-shrink: 0;
     }
-
-    h2 {
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      letter-spacing: -0.2px;
-    }
-
-    p {
-      color: var(--text-secondary);
-      font-size: 0.9375rem;
-      margin-bottom: 12px;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    /* ─── PERMISSION TABLE ───────────────────────────────── */
-    .perm-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
+    h2 { font-size: 1.125rem; font-weight: 600; color: var(--text-primary); letter-spacing: -0.2px; }
+    p { color: var(--text-secondary); font-size: 0.9375rem; margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+    .perm-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
     .perm-item {
       display: grid;
       grid-template-columns: auto 1fr;
@@ -217,26 +139,9 @@
       border-radius: var(--radius-sm);
       padding: 14px 16px;
     }
-
-    .perm-icon {
-      font-size: 1.25rem;
-      line-height: 1.4;
-    }
-
-    .perm-name {
-      font-weight: 600;
-      font-size: 0.875rem;
-      color: var(--text-primary);
-      margin-bottom: 2px;
-    }
-
-    .perm-desc {
-      font-size: 0.8125rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* ─── HIGHLIGHT BOX ──────────────────────────────────── */
+    .perm-icon { font-size: 1.25rem; line-height: 1.4; }
+    .perm-name { font-weight: 600; font-size: 0.875rem; color: var(--text-primary); margin-bottom: 2px; }
+    .perm-desc { font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5; }
     .highlight {
       background: var(--accent-dim);
       border: 1px solid rgba(244, 165, 35, 0.25);
@@ -246,48 +151,8 @@
       gap: 12px;
       align-items: flex-start;
     }
-
-    .highlight-icon {
-      font-size: 1.25rem;
-      flex-shrink: 0;
-      line-height: 1.5;
-    }
-
-    .highlight p {
-      margin: 0;
-      color: rgba(244, 165, 35, 0.9);
-      font-size: 0.9rem;
-    }
-
-    /* ─── DATA SUBSECTION ────────────────────────────────── */
-    .data-subsection {
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 16px 18px;
-      margin-top: 12px;
-    }
-
-    .data-subsection h3 {
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .data-subsection p {
-      font-size: 0.8125rem;
-      margin-bottom: 6px;
-    }
-
-    .data-subsection p:last-child {
-      margin-bottom: 0;
-    }
-
-    /* ─── CONTACT ────────────────────────────────────────── */
+    .highlight-icon { font-size: 1.25rem; flex-shrink: 0; line-height: 1.5; }
+    .highlight p { margin: 0; color: rgba(244, 165, 35, 0.9); font-size: 0.9rem; }
     .contact-link {
       display: inline-flex;
       align-items: center;
@@ -298,12 +163,7 @@
       border-bottom: 1px solid rgba(244, 165, 35, 0.3);
       transition: border-color 0.2s;
     }
-
-    .contact-link:hover {
-      border-color: var(--accent);
-    }
-
-    /* ─── FOOTER ─────────────────────────────────────────── */
+    .contact-link:hover { border-color: var(--accent); }
     footer {
       text-align: center;
       padding: 32px 24px;
@@ -311,641 +171,839 @@
       color: var(--text-muted);
       font-size: 0.8125rem;
     }
-
-    footer a {
-      color: var(--text-secondary);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: var(--accent);
-    }
-
-    /* ─── RESPONSIVE ─────────────────────────────────────── */
+    footer a { color: var(--text-secondary); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
     @media (max-width: 600px) {
-      .section-card {
-        padding: 20px;
-      }
-      main {
-        padding: 32px 16px 60px;
-      }
+      .section-card { padding: 20px; }
+      main { padding: 32px 16px 60px; }
     }
-
-    /* ─── LANG SECTIONS ──────────────────────────────────── */
-    [data-lang] {
-      display: none;
-    }
-    [data-lang].visible {
-      display: block;
-    }
+    [data-lang] { display: none; }
+    [data-lang].visible { display: block; }
   </style>
 </head>
-<body>
-
+<body id="top">
 <header>
   <span class="header-icon">🏐</span>
   <h1>Volleyball Match</h1>
-  <p class="header-subtitle">Privacy Policy / Политика конфиденциальности / Gizlilik Politikası</p>
+  <p class="header-subtitle">Privacy Policy</p>
   <div class="lang-switch">
-    <button class="lang-btn active" id="btn-ru" onclick="switchLang('ru')">🇷🇺 Русский</button>
-    <button class="lang-btn" id="btn-en" onclick="switchLang('en')">🇬🇧 English</button>
+    <button class="lang-btn active" id="btn-en" onclick="switchLang('en')">🇬🇧 English</button>
+    <button class="lang-btn" id="btn-ru" onclick="switchLang('ru')">🇷🇺 Русский</button>
+    <button class="lang-btn" id="btn-uk" onclick="switchLang('uk')">🇺🇦 Українська</button>
+    <button class="lang-btn" id="btn-de" onclick="switchLang('de')">🇩🇪 Deutsch</button>
+    <button class="lang-btn" id="btn-es" onclick="switchLang('es')">🇪🇸 Español</button>
+    <button class="lang-btn" id="btn-es-419" onclick="switchLang('es-419')">🌎 Español (LatAm)</button>
+    <button class="lang-btn" id="btn-fr" onclick="switchLang('fr')">🇫🇷 Français</button>
+    <button class="lang-btn" id="btn-it" onclick="switchLang('it')">🇮🇹 Italiano</button>
+    <button class="lang-btn" id="btn-pl" onclick="switchLang('pl')">🇵🇱 Polski</button>
+    <button class="lang-btn" id="btn-pt" onclick="switchLang('pt')">🇧🇷 Português</button>
     <button class="lang-btn" id="btn-tr" onclick="switchLang('tr')">🇹🇷 Türkçe</button>
+    <button class="lang-btn" id="btn-fi" onclick="switchLang('fi')">🇫🇮 Suomi</button>
+    <button class="lang-btn" id="btn-id" onclick="switchLang('id')">🇮🇩 Indonesia</button>
+    <button class="lang-btn" id="btn-ja" onclick="switchLang('ja')">🇯🇵 日本語</button>
+    <button class="lang-btn" id="btn-ar" onclick="switchLang('ar')">🇸🇦 العربية</button>
   </div>
 </header>
-
 <main>
-
-  <!-- ══════════════════ RUSSIAN ══════════════════ -->
-  <div data-lang="ru" class="visible">
-
+  <!-- ══════════════════ EN ══════════════════ -->
+  <div data-lang="en" dir="ltr" class="visible">
     <div class="meta-bar">
-      <div class="meta-chip"><span class="icon">📅</span> Дата вступления в силу: 29 мая 2025 г.</div>
-      <div class="meta-chip"><span class="icon">🔄</span> Последнее обновление: 29 мая 2025 г.</div>
+      <div class="meta-chip"><span class="icon">📅</span> Effective date: November 25, 2026</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Last updated: November 25, 2026</div>
     </div>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">👋</div>
-          <h2>Введение</h2>
-        </div>
-        <p>
-          Добро пожаловать в <strong>Volleyball Match</strong> — мобильное приложение-табло для отображения
-          текущего счёта волейбольных матчей. Приложение разработано как одиночный инструмент для спортивных
-          мероприятий и не требует создания аккаунта.
-        </p>
-        <p>
-          Настоящая Политика конфиденциальности описывает, какие данные собирает (или не собирает) приложение
-          и как они используются. Пожалуйста, прочитайте её внимательно.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">🚫</div>
-          <h2>Персональные данные</h2>
-        </div>
-        <div class="highlight">
-          <span class="highlight-icon">✅</span>
-          <p>
-            <strong>Volleyball Match не собирает, не передаёт и не хранит никаких персональных данных пользователей.</strong>
-            Мы не используем сторонние SDK для отслеживания личной информации и не подключаемся к внешним сервисам для сбора персональных данных.
-          </p>
-        </div>
-        <p style="margin-top:16px;">
-          Все пользовательские настройки (например, счёт, настройки матча) хранятся исключительно локально
-          на вашем устройстве с помощью стандартного механизма Shared Preferences и никуда не передаются.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">🔑</div>
-          <h2>Разрешения приложения</h2>
-        </div>
-        <p>Для работы некоторых функций приложению требуются следующие разрешения устройства:</p>
-        <ul class="perm-list">
-          <li class="perm-item">
-            <span class="perm-icon">📷</span>
-            <div>
-              <div class="perm-name">Камера</div>
-              <div class="perm-desc">
-                Используется только для сканирования QR-кода при подключении другого устройства в качестве
-                дисплея-трансляции по локальной сети. Видео с камеры не записывается и не передаётся.
-              </div>
-            </div>
-          </li>
-          <li class="perm-item">
-            <span class="perm-icon">📡</span>
-            <div>
-              <div class="perm-name">Доступ к локальной сети (Wi-Fi)</div>
-              <div class="perm-desc">
-                Используется для функции трансляции счёта: приложение создаёт локальный WebSocket-сервер,
-                к которому может подключиться другое устройство в той же сети. Соединение работает только
-                в пределах вашей локальной сети; данные не выходят в интернет.
-              </div>
-            </div>
-          </li>
-          <li class="perm-item">
-            <span class="perm-icon">💡</span>
-            <div>
-              <div class="perm-name">Запрет перехода в спящий режим (Wakelock)</div>
-              <div class="perm-desc">
-                Удерживает экран устройства включённым во время матча, чтобы табло всегда было видно.
-              </div>
-            </div>
-          </li>
-          <li class="perm-item">
-            <span class="perm-icon">🔊</span>
-            <div>
-              <div class="perm-name">Аудио</div>
-              <div class="perm-desc">
-                Приложение воспроизводит локальные звуковые файлы (звук свистка) с устройства.
-                Микрофон не используется.
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">🌐</div>
-          <h2>Сетевая активность</h2>
-        </div>
-        
-        <div class="data-subsection">
-          <h3>🔒 Локальная сеть</h3>
-          <p>
-            Приложение создаёт <strong>локальный WebSocket-сервер</strong> только при активации функции «Трансляция».
-            Сервер работает исключительно в вашей домашней или офисной сети (LAN/Wi-Fi). Никакие данные при этом не выходят в интернет.
-          </p>
-          <p>
-            Обнаружение устройств в локальной сети осуществляется через протокол mDNS/Bonjour (библиотека Bonsoir).
-          </p>
-        </div>
-
-        <div class="data-subsection">
-          <h3>📊 Аналитика и отладка</h3>
-          <p>
-            Приложение использует интернет-соединение для передачи <strong>обезличенных аналитических данных</strong> и
-            <strong>отладочной информации</strong> на удалённые серверы в целях улучшения качества продукта.
-          </p>
-          <p>
-            Передаваемые данные включают:
-          </p>
-          <ul style="margin: 8px 0 6px 20px; font-size: 0.8125rem; color: var(--text-secondary);">
-            <li>Общие события использования приложения (запуск, активация функций)</li>
-            <li>Сведения об ошибках и сбоях</li>
-            <li>Информацию о производительности (время отклика, использование ресурсов)</li>
-            <li>Сведения об устройстве (версия OS, модель, язык)</li>
-          </ul>
-          <p>
-            <strong>Эти данные не содержат личную информацию</strong> (имя, контакты, содержание матчей).
-            Все данные обезличены и используются только в статистических целях.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">👶</div>
-          <h2>Дети</h2>
-        </div>
-        <p>
-          Приложение не предназначено специально для детей, однако может использоваться на спортивных
-          мероприятиях в любом возрасте. Поскольку приложение не собирает персональные данные детей,
-          специальные меры защиты детских данных (COPPA / GDPR-K) не требуются.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">📝</div>
-          <h2>Изменения политики</h2>
-        </div>
-        <p>
-          Мы можем периодически обновлять настоящую Политику конфиденциальности. Актуальная версия всегда
-          доступна по данному URL. Дата последнего изменения указана в верхней части страницы.
-        </p>
-        <p>
-          Если изменения будут существенными, мы опубликуем уведомление в описании приложения в магазинах
-          App Store и Google Play.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">✉️</div>
-          <h2>Свяжитесь с нами</h2>
-        </div>
-        <p>
-          Если у вас есть вопросы об этой Политике конфиденциальности или о работе приложения,
-          вы можете написать нам:
-        </p>
-        <p>
-          📧 <a class="contact-link" href="mailto:braginsm@gmail.com">braginsm@gmail.com</a>
-        </p>
-      </div>
-    </section>
-
-  </div><!-- /ru -->
-
-  <!-- ══════════════════ ENGLISH ══════════════════ -->
-  <div data-lang="en">
-
-    <div class="meta-bar">
-      <div class="meta-chip"><span class="icon">📅</span> Effective date: May 29, 2025</div>
-      <div class="meta-chip"><span class="icon">🔄</span> Last updated: May 29, 2025</div>
-    </div>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">👋</div>
-          <h2>Introduction</h2>
-        </div>
-        <p>
-          Welcome to <strong>Volleyball Match</strong> — a mobile scoreboard application for displaying the
-          current score of volleyball games. The app is designed as a standalone tool for sporting events.
-        </p>
-        <p>
-          This Privacy Policy describes what data the application collects (or does not collect) and how it
-          is used. Please read it carefully.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">🚫</div>
-          <h2>Personal Data</h2>
-        </div>
-        <div class="highlight">
-          <span class="highlight-icon">✅</span>
-          <p>
-            <strong>Volleyball Match does not collect, transmit, or store any personal user data.</strong>
-            We do not use third-party tracking SDKs or connect to external services for collecting personal information.
-          </p>
-        </div>
-        <p style="margin-top:16px;">
-          All user preferences (such as scores and match settings) are stored solely on your device using
-          the standard Shared Preferences mechanism and are never sent anywhere.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">🔑</div>
-          <h2>App Permissions</h2>
-        </div>
-        <p>Certain app features require the following device permissions:</p>
-        <ul class="perm-list">
-          <li class="perm-item">
-            <span class="perm-icon">📷</span>
-            <div>
-              <div class="perm-name">Camera</div>
-              <div class="perm-desc">
-                Used only to scan QR codes when connecting another device as a broadcast display over the
-                local network. Camera footage is never recorded or transmitted.
-              </div>
-            </div>
-          </li>
-          <li class="perm-item">
-            <span class="perm-icon">📡</span>
-            <div>
-              <div class="perm-name">Local Network Access (Wi-Fi)</div>
-              <div class="perm-desc">
-                Used for the score broadcast feature: the app creates a local WebSocket server to which
-                another device on the same network can connect. The connection operates only within your
-                local network; no data is sent over the internet.
-              </div>
-            </div>
-          </li>
-          <li class="perm-item">
-            <span class="perm-icon">💡</span>
-            <div>
-              <div class="perm-name">Keep Screen On (Wakelock)</div>
-              <div class="perm-desc">
-                Keeps the device screen on during a match so the scoreboard is always visible.
-              </div>
-            </div>
-          </li>
-          <li class="perm-item">
-            <span class="perm-icon">🔊</span>
-            <div>
-              <div class="perm-name">Audio</div>
-              <div class="perm-desc">
-                The app plays local audio files (whistle sounds) stored on the device.
-                The microphone is never used.
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">🌐</div>
-          <h2>Network Activity</h2>
-        </div>
-
-        <div class="data-subsection">
-          <h3>🔒 Local Network</h3>
-          <p>
-            The app creates a <strong>local WebSocket server</strong> only when the "Broadcast" feature is activated.
-            The server operates solely within your home or office network (LAN/Wi-Fi). No data leaves the local network at any time.
-          </p>
-          <p>
-            Device discovery on the local network is performed via mDNS/Bonjour (Bonsoir library).
-          </p>
-        </div>
-
-        <div class="data-subsection">
-          <h3>📊 Analytics and Debugging</h3>
-          <p>
-            The app uses internet connectivity to transmit <strong>anonymized analytics data</strong> and
-            <strong>debug information</strong> to remote servers for the purpose of improving product quality.
-          </p>
-          <p>
-            The transmitted data includes:
-          </p>
-          <ul style="margin: 8px 0 6px 20px; font-size: 0.8125rem; color: var(--text-secondary);">
-            <li>General app usage events (startup, feature activation)</li>
-            <li>Error and crash information</li>
-            <li>Performance metrics (response time, resource usage)</li>
-            <li>Device information (OS version, model, language)</li>
-          </ul>
-          <p>
-            <strong>This data does not contain personal information</strong> (name, contacts, match content).
-            All data is anonymized and used only for statistical purposes.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">👶</div>
-          <h2>Children</h2>
-        </div>
-        <p>
-          The app is not specifically targeted at children, but may be used at sporting events by people
-          of all ages. Because the app does not collect personal data from children, no special child data protections
-          (COPPA / GDPR-K) are required.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">📝</div>
-          <h2>Changes to This Policy</h2>
-        </div>
-        <p>
-          We may periodically update this Privacy Policy. The current version is always available at this
-          URL. The date of the last change is shown at the top of this page.
-        </p>
-        <p>
-          If the changes are significant, we will publish a notice in the app description on the App Store
-          and Google Play.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">✉️</div>
-          <h2>Contact Us</h2>
-        </div>
-        <p>
-          If you have questions about this Privacy Policy or about how the app works, you can reach us at:
-        </p>
-        <p>
-          📧 <a class="contact-link" href="mailto:braginsm@gmail.com">braginsm@gmail.com</a>
-        </p>
-      </div>
-    </section>
-
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Introduction</h2></div>
+      <p>Welcome to <strong>Volleyball Match</strong> — a volleyball scoreboard and team management app. You can use the scoreboard offline without signing in, or sign in to sync your saved teams and players across devices and broadcast live match scores.</p>
+      <p>This Privacy Policy explains what data we collect, why we process it, how long it is stored, and how you can delete it.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Data We Collect and Process</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>Offline use requires no account.</strong> Cloud sync and live broadcasts are optional features you choose to enable.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Local Device Storage</div><div class="perm-desc">Match settings, temporary Quick Mix teams, and offline read-cache data are stored locally on your device via SharedPreferences.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Account & Authentication (Firebase Authentication)</div><div class="perm-desc">When you sign in with Google or Apple, we receive and store your Firebase UID, email address, and display name. Anonymous sessions use only a random Firebase UID.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Teams & Players Cloud Sync (Google Cloud Run & PostgreSQL)</div><div class="perm-desc">When signed in, your saved teams, rosters, and player profiles are stored on our backend server (hosted on Google Cloud Run with PostgreSQL) to sync across your devices.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Live Match Broadcast (Cloud Firestore)</div><div class="perm-desc">When you start a cloud broadcast, match score state and anonymous spectator presence counters are stored in Cloud Firestore. Unfinished broadcasts are automatically deleted after 24 hours, and finished broadcasts after 30 days.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Analytics & Crash Diagnostics (Firebase Analytics & Crashlytics)</div><div class="perm-desc">We collect anonymized usage events and crash stack traces to improve app stability and performance. We do not sell your data or use third-party ad trackers.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Account & Data Deletion</h2></div>
+      <p>You can permanently delete your account and all associated cloud data (Firebase Auth account, synced teams and players in PostgreSQL, and hosted Firestore broadcasts) directly inside the app via <strong>Settings → Delete account</strong>.</p>
+      <p>You may also request data deletion by emailing us at <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>App Permissions</h2></div>
+      <p>Certain features require the following device permissions:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Camera</div><div class="perm-desc">Used only to scan QR codes when joining a score broadcast. Camera video is never recorded or uploaded.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Local Network (Wi-Fi / mDNS)</div><div class="perm-desc">Used for local network score broadcasting via WebSocket and Bonsoir/mDNS discovery. Local broadcast traffic never leaves your Wi-Fi network.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Keep Screen On (Wakelock)</div><div class="perm-desc">Keeps the screen awake during a match so the scoreboard remains visible.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Audio</div><div class="perm-desc">Plays local whistle sound effects. The microphone is never accessed.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Children</h2></div>
+      <p>Volleyball Match is not directed to children under 13 (or the applicable age of digital consent in your region). We do not knowingly collect personal data from children; if you believe a child has provided personal data, please contact us for immediate deletion.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Changes to This Policy</h2></div>
+      <p>We may update this Privacy Policy from time to time. The latest version is always published at this URL with the updated date at the top of the page.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Contact Us</h2></div>
+      <p>If you have questions about this Privacy Policy or your data, contact us at:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
   </div><!-- /en -->
-
-  <!-- ══════════════════ TURKISH ══════════════════ -->
-  <div data-lang="tr">
-
+  <!-- ══════════════════ RU ══════════════════ -->
+  <div data-lang="ru" dir="ltr" class="">
     <div class="meta-bar">
-      <div class="meta-chip"><span class="icon">📅</span> Yürürlük tarihi: 29 Mayıs 2025</div>
-      <div class="meta-chip"><span class="icon">🔄</span> Son güncelleme: 29 Mayıs 2025</div>
+      <div class="meta-chip"><span class="icon">📅</span> Дата вступления в силу: 25 ноября 2026 г.</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Последнее обновление: 25 ноября 2026 г.</div>
     </div>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">👋</div>
-          <h2>Giriş</h2>
-        </div>
-        <p>
-          <strong>Volleyball Match</strong> uygulamasına hoş geldiniz — voleybol maçlarının güncel skorunu görüntülemek
-          için tasarlanmış bir mobil puan tablosu uygulaması. Uygulama, spor etkinlikleri için bağımsız bir araç olarak
-          tasarlanmıştır ve hesap oluşturmayı gerektirmez.
-        </p>
-        <p>
-          Bu Gizlilik Politikası, uygulamanın hangi verileri topladığını (veya toplamadığını) ve bunların nasıl
-          kullanıldığını açıklar. Lütfen bunu dikkatle okuyun.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">🚫</div>
-          <h2>Kişisel Veriler</h2>
-        </div>
-        <div class="highlight">
-          <span class="highlight-icon">✅</span>
-          <p>
-            <strong>Volleyball Match, kullanıcı kişisel verilerini toplamaz, iletmez veya depolamaz.</strong>
-            Kişisel bilgileri izlemek için üçüncü taraf SDK'lar kullanmıyor ve kişisel veriler toplamak için harici
-            hizmetlere bağlanmıyoruz.
-          </p>
-        </div>
-        <p style="margin-top:16px;">
-          Tüm kullanıcı tercihler (puan ve maç ayarları gibi) tamamen cihazınızda standart Shared Preferences mekanizması
-          kullanılarak saklanır ve hiçbir yere gönderilmez.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">🔑</div>
-          <h2>Uygulama İzinleri</h2>
-        </div>
-        <p>Belirli uygulama özellikleri aşağıdaki cihaz izinlerini gerektirir:</p>
-        <ul class="perm-list">
-          <li class="perm-item">
-            <span class="perm-icon">📷</span>
-            <div>
-              <div class="perm-name">Kamera</div>
-              <div class="perm-desc">
-                Başka bir cihazı yerel ağ üzerinden yayın görüntüsü olarak bağlarken QR kodları taramak için kullanılır.
-                Kamera videosu hiçbir zaman kaydedilmez veya iletilmez.
-              </div>
-            </div>
-          </li>
-          <li class="perm-item">
-            <span class="perm-icon">📡</span>
-            <div>
-              <div class="perm-name">Yerel Ağ Erişimi (Wi-Fi)</div>
-              <div class="perm-desc">
-                Skor yayını özelliği için kullanılır: uygulama, aynı ağdaki başka bir cihazın bağlanabileceği yerel
-                bir WebSocket sunucusu oluşturur. Bağlantı yalnızca yerel ağınız içinde çalışır; İnternet'e veri
-                gönderilmez.
-              </div>
-            </div>
-          </li>
-          <li class="perm-item">
-            <span class="perm-icon">💡</span>
-            <div>
-              <div class="perm-name">Ekranı Açık Tut (Wakelock)</div>
-              <div class="perm-desc">
-                Maç sırasında cihaz ekranını açık tutar, böylece puan tablosu her zaman görülebilir.
-              </div>
-            </div>
-          </li>
-          <li class="perm-item">
-            <span class="perm-icon">🔊</span>
-            <div>
-              <div class="perm-name">Ses</div>
-              <div class="perm-desc">
-                Uygulama, cihazda depolanan yerel ses dosyalarını (düdük sesi) oynatır.
-                Mikrofon hiçbir zaman kullanılmaz.
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">🌐</div>
-          <h2>Ağ Aktivitesi</h2>
-        </div>
-
-        <div class="data-subsection">
-          <h3>🔒 Yerel Ağ</h3>
-          <p>
-            Uygulama <strong>yerel WebSocket sunucusu</strong> yalnızca "Yayın" özelliği etkinleştirildiğinde oluşturur.
-            Sunucu tamamen ev veya ofis ağınız (LAN/Wi-Fi) içinde çalışır. Hiçbir zaman yerel ağı terk eden veri yoktur.
-          </p>
-          <p>
-            Yerel ağdaki cihaz keşfi, mDNS/Bonjour protokolü (Bonsoir kütüphanesi) aracılığıyla gerçekleştirilir.
-          </p>
-        </div>
-
-        <div class="data-subsection">
-          <h3>📊 Analitik ve Hata Ayıklama</h3>
-          <p>
-            Uygulama, ürün kalitesini iyileştirmek amacıyla <strong>anonimleştirilmiş analitik veriler</strong> ve
-            <strong>hata ayıklama bilgileri</strong> uzak sunuculara iletmek için İnternet bağlantısını kullanır.
-          </p>
-          <p>
-            İletilen veriler şunları içerir:
-          </p>
-          <ul style="margin: 8px 0 6px 20px; font-size: 0.8125rem; color: var(--text-secondary);">
-            <li>Genel uygulama kullanım olayları (başlatma, özellik aktivasyonu)</li>
-            <li>Hata ve çökme bilgileri</li>
-            <li>Performans metrikleri (yanıt süresi, kaynak kullanımı)</li>
-            <li>Cihaz bilgileri (OS sürümü, model, dil)</li>
-          </ul>
-          <p>
-            <strong>Bu veriler kişisel bilgiler içermez</strong> (ad, iletişim, maç içeriği).
-            Tüm veriler anonimleştirilir ve yalnızca istatistiksel amaçlar için kullanılır.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">👶</div>
-          <h2>Çocuklar</h2>
-        </div>
-        <p>
-          Uygulama özellikle çocuklara yönelik değildir, ancak her yaştan kişiler tarafından spor etkinliklerinde
-          kullanılabilir. Uygulama çocuklardan kişisel veriler toplamadığı için, özel çocuk veri korumaları
-          (COPPA / GDPR-K) gerekli değildir.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">📝</div>
-          <h2>Politika Değişiklikleri</h2>
-        </div>
-        <p>
-          Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu URL'de mevcuttur.
-          Son değişikliğin tarihi bu sayfanın üst kısmında gösterilir.
-        </p>
-        <p>
-          Değişiklikler önemliyse, App Store ve Google Play'deki uygulama açıklamasında bir bildirim yayınlayacağız.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-card">
-        <div class="section-header">
-          <div class="section-icon">✉️</div>
-          <h2>Bize Ulaşın</h2>
-        </div>
-        <p>
-          Bu Gizlilik Politikası hakkında veya uygulamanın nasıl çalıştığı hakkında sorularınız varsa,
-          bize ulaşabilirsiniz:
-        </p>
-        <p>
-          📧 <a class="contact-link" href="mailto:braginsm@gmail.com">braginsm@gmail.com</a>
-        </p>
-      </div>
-    </section>
-
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Введение</h2></div>
+      <p>Добро пожаловать в <strong>Volleyball Match</strong> — приложение-табло для волейбольных матчей и управления командами. Вы можете вести счёт оффлайн без регистрации или войти в аккаунт для синхронизации команд между устройствами и онлайн-трансляции матчей.</p>
+      <p>Настоящая Политика конфиденциальности описывает, какие данные обрабатываются приложением, зачем они нужны, сколько хранятся и как их удалить.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Какие данные мы собираем и обрабатываем</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>Оффлайн-режим не требует аккаунта.</strong> Облачная синхронизация и онлайн-трансляция работают только по вашему выбору.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Локальное хранилище устройства</div><div class="perm-desc">Настройки матчей, временные команды Quick Mix и локальная копия для оффлайн-просмотра хранятся на вашем устройстве (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Аккаунт и вход (Firebase Authentication)</div><div class="perm-desc">При входе через Google или Apple мы обрабатываем ваш Firebase UID, адрес электронной почты и отображаемое имя. Для анонимной сессии используется только случайный Firebase UID.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Облачная синхронизация команд и игроков (Google Cloud Run и PostgreSQL)</div><div class="perm-desc">После входа сохранённые команды, составы и профили игроков хранятся на нашем сервере (Google Cloud Run + PostgreSQL) для синхронизации между вашими устройствами.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Онлайн-трансляция матчей (Cloud Firestore)</div><div class="perm-desc">При запуске облачной трансляции состояние матча и анонимный счётчик зрителей сохраняются в Cloud Firestore. Незавершённые матчи автоматически удаляются через 24 часа, завершённые — через 30 дней.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Аналитика и отчёты о сбоях (Firebase Analytics и Crashlytics)</div><div class="perm-desc">Мы собираем обезличенные события использования и отчёты о сбоях для повышения стабильности приложения. Мы не продаём данные и не используем рекламные трекеры.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Удаление аккаунта и данных</h2></div>
+      <p>Вы можете в любой момент полностью удалить свой аккаунт и все связанные облачные данные (учётную запись Firebase Auth, команды и игроков в PostgreSQL, активные трансляции в Firestore) прямо в приложении: <strong>Настройки → Удалить аккаунт</strong>.</p>
+      <p>Также вы можете запросить удаление данных по адресу <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>Разрешения приложения</h2></div>
+      <p>Для работы отдельных функций требуются следующие разрешения:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Камера</div><div class="perm-desc">Используется только для сканирования QR-кода при подключении к трансляции счёта. Видео не записывается и не передаётся.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Локальная сеть (Wi-Fi / mDNS)</div><div class="perm-desc">Используется для локальной трансляции счёта через WebSocket и обнаружения устройств по mDNS/Bonjour. Локальный трафик не выходит в интернет.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Запрет сна экрана (Wakelock)</div><div class="perm-desc">Не даёт экрану гаснуть во время матча.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Аудио</div><div class="perm-desc">Воспроизводит локальные звуковые эффекты свистка. Микрофон не используется.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Дети</h2></div>
+      <p>Приложение не предназначено для детей младше 13 лет (или иного применимого возраста цифрового согласия). Если вы считаете, что ребёнок передал нам персональные данные, свяжитесь с нами для их немедленного удаления.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Изменения политики</h2></div>
+      <p>Мы можем периодически обновлять настоящую Политику. Актуальная версия всегда доступна по этому URL, а дата обновления указана вверху страницы.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Свяжитесь с нами</h2></div>
+      <p>По вопросам конфиденциальности и работы с данными пишите нам:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /ru -->
+  <!-- ══════════════════ UK ══════════════════ -->
+  <div data-lang="uk" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Дата набрання чинності: 25 листопада 2026 р.</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Останнє оновлення: 25 листопада 2026 р.</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Вступ</h2></div>
+      <p>Ласкаво просимо до <strong>Volleyball Match</strong> — застосунку-табло для волейбольних матчів та керування командами. Ви можете користуватися табло офлайн без реєстрації або увійти в акаунт для синхронізації команд між пристроями та онлайн-трансляції рахунку.</p>
+      <p>Ця Політика конфіденційності пояснює, які дані збираються, як вони використовуються, скільки зберігаються та як їх видалити.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Які дані ми збираємо та обробляємо</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>Офлайн-режим не потребує акаунта.</strong> Хмарна синхронізація та трансляції працюють лише за вашим вибором.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Локальне сховище пристрою</div><div class="perm-desc">Налаштування матчів, тимчасові команди Quick Mix та локальний кеш для офлайн-перегляду зберігаються на пристрої (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Акаунт і вхід (Firebase Authentication)</div><div class="perm-desc">Під час входу через Google або Apple ми обробляємо ваш Firebase UID, електронну пошту та ім'я профілю. Анонімні сесії використовують лише випадковий Firebase UID.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Хмарна синхронізація команд і гравців (Google Cloud Run і PostgreSQL)</div><div class="perm-desc">Після входу збережені команди, склади та профілі гравців зберігаються на нашому сервері (Google Cloud Run + PostgreSQL) для синхронізації між пристроями.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Онлайн-трансляція матчів (Cloud Firestore)</div><div class="perm-desc">Під час запуску хмарної трансляції стан матчу та анонімний лічильник глядачів зберігаються у Cloud Firestore. Незавершені матчі видаляються через 24 години, завершені — через 30 днів.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Аналітика та звіти про збої (Firebase Analytics і Crashlytics)</div><div class="perm-desc">Ми збираємо знеособлену статистику використання та звіти про збої для покращення стабільності. Ми не продаємо дані й не використовуємо рекламні трекери.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Видалення акаунта та даних</h2></div>
+      <p>Ви можете в будь-який момент повністю видалити акаунт і всі пов'язані хмарні дані (обліковий запис Firebase Auth, команди й гравців у PostgreSQL, трансляції у Firestore) у застосунку: <strong>Налаштування → Видалити акаунт</strong>.</p>
+      <p>Також ви можете надіслати запит на <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>Дозволи застосунку</h2></div>
+      <p>Для окремих функцій потрібні такі дозволи:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Камера</div><div class="perm-desc">Використовується лише для сканування QR-коду під час підключення до трансляції. Відео не записується і не передається.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Локальна мережа (Wi-Fi / mDNS)</div><div class="perm-desc">Використовується для локальної трансляції через WebSocket та виявлення пристроїв через mDNS/Bonjour. Локальний трафік не виходить в інтернет.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Утримання екрана увімкненим (Wakelock)</div><div class="perm-desc">Запобігає вимкненню екрана під час матчу.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Аудіо</div><div class="perm-desc">Відтворює локальні звуки свистка. Мікрофон не використовується.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Діти</h2></div>
+      <p>Застосунок не призначений для дітей віком до 13 років (або іншого віку цифрової згоди у вашому регіоні). Якщо дитина надала нам персональні дані, зв'яжіться з нами для їх негайного видалення.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Зміни політики</h2></div>
+      <p>Ми можемо періодично оновлювати цю Політику. Актуальна версія завжди доступна за цим URL із датою оновлення вгорі сторінки.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Зв'язатися з нами</h2></div>
+      <p>З питань конфіденційності пишіть нам:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /uk -->
+  <!-- ══════════════════ DE ══════════════════ -->
+  <div data-lang="de" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Gültig ab: 25. November 2026</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Zuletzt aktualisiert: 25. November 2026</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Einleitung</h2></div>
+      <p>Willkommen bei <strong>Volleyball Match</strong> — einer App für Volleyball-Spielstände und Teamverwaltung. Du kannst die Anzeigetafel offline ohne Konto nutzen oder dich anmelden, um Teams geräteübergreifend zu synchronisieren und Spiele live zu übertragen.</p>
+      <p>Diese Datenschutzerklärung erläutert, welche Daten wir verarbeiten, zu welchem Zweck, wie lange sie gespeichert werden und wie du sie löschen kannst.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Welche Daten wir erheben und verarbeiten</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>Die Offline-Nutzung erfordert kein Konto.</strong> Cloud-Synchronisierung und Live-Übertragungen sind optionale Funktionen.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Lokaler Gerätespeicher</div><div class="perm-desc">Spieleinstellungen, temporäre Quick-Mix-Teams und der Offline-Lesecache werden lokal auf deinem Gerät gespeichert (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Konto & Anmeldung (Firebase Authentication)</div><div class="perm-desc">Bei der Anmeldung über Google oder Apple verarbeiten wir deine Firebase-UID, E-Mail-Adresse und deinen Anzeigenamen. Anonyme Sitzungen verwenden nur eine zufällige Firebase-UID.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Cloud-Synchronisierung (Google Cloud Run & PostgreSQL)</div><div class="perm-desc">Nach der Anmeldung werden gespeicherte Teams, Kader und Spielerprofile auf unserem Backend-Server (Google Cloud Run + PostgreSQL) gespeichert, um sie zwischen deinen Geräten zu synchronisieren.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Live-Übertragung (Cloud Firestore)</div><div class="perm-desc">Wenn du eine Cloud-Übertragung startest, werden Spielstand und anonyme Zuschauerzähler in Cloud Firestore gespeichert. Unbeendete Spiele werden nach 24 Stunden, beendete nach 30 Tagen automatisch gelöscht.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Analyse & Absturzberichte (Firebase Analytics & Crashlytics)</div><div class="perm-desc">Wir erfassen anonymisierte Nutzungsereignisse und Absturzberichte zur Verbesserung der Stabilität. Wir verkaufen keine Daten und nutzen keine Werbe-Tracker.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Löschung von Konto und Daten</h2></div>
+      <p>Du kannst dein Konto und alle zugehörigen Cloud-Daten (Firebase Auth, Teams/Spieler in PostgreSQL, Firestore-Übertragungen) jederzeit in der App löschen unter <strong>Einstellungen → Konto löschen</strong>.</p>
+      <p>Alternativ kannst du die Löschung per E-Mail an <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a> anfordern.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>App-Berechtigungen</h2></div>
+      <p>Für bestimmte Funktionen sind folgende Berechtigungen erforderlich:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Kamera</div><div class="perm-desc">Nur zum Scannen von QR-Codes für die Spielübertragung. Es werden keine Videos aufgezeichnet oder übertragen.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Lokales Netzwerk (WLAN / mDNS)</div><div class="perm-desc">Für lokale WebSocket-Übertragungen und mDNS/Bonjour-Geräteerkennung. Lokaler Datenverkehr verlässt dein WLAN nicht.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Bildschirm aktiv lassen (Wakelock)</div><div class="perm-desc">Hält das Display während des Spiels eingeschaltet.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Audio</div><div class="perm-desc">Spielt lokale Pfiff-Soundeffekte ab. Das Mikrofon wird nicht verwendet.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Kinder</h2></div>
+      <p>Die App richtet sich nicht an Kinder unter 13 Jahren (bzw. dem jeweiligen gesetzlichen Mindestalter). Sollten wir versehentlich Daten eines Kindes erhalten haben, kontaktiere uns bitte zur sofortigen Löschung.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Änderungen dieser Erklärung</h2></div>
+      <p>Wir können diese Datenschutzerklärung gelegentlich aktualisieren. Die aktuelle Version ist stets unter dieser URL mit dem Aktualisierungsdatum verfügbar.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Kontakt</h2></div>
+      <p>Bei Fragen zum Datenschutz erreichst du uns unter:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /de -->
+  <!-- ══════════════════ ES ══════════════════ -->
+  <div data-lang="es" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Fecha de entrada en vigor: 25 de noviembre de 2026</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Última actualización: 25 de noviembre de 2026</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Introducción</h2></div>
+      <p>Bienvenido a <strong>Volleyball Match</strong>, una aplicación de marcador de voleibol y gestión de equipos. Puedes usar el marcador sin conexión y sin cuenta, o iniciar sesión para sincronizar tus equipos entre dispositivos y retransmitir partidos en directo.</p>
+      <p>Esta Política de Privacidad explica qué datos recopilamos, cómo se utilizan, cuánto tiempo se conservan y cómo puedes eliminarlos.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Datos que recopilamos y procesamos</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>El uso sin conexión no requiere cuenta.</strong> La sincronización en la nube y las retransmisiones en directo son opcionales.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Almacenamiento local del dispositivo</div><div class="perm-desc">Los ajustes del partido, los equipos temporales Quick Mix y la caché de lectura sin conexión se guardan localmente (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Cuenta y autenticación (Firebase Authentication)</div><div class="perm-desc">Al iniciar sesión con Google o Apple, procesamos tu Firebase UID, correo electrónico y nombre visible. Las sesiones anónimas solo usan un UID aleatorio.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Sincronización de equipos y jugadores (Google Cloud Run y PostgreSQL)</div><div class="perm-desc">Al iniciar sesión, tus equipos, plantillas y perfiles de jugadores se guardan en nuestro servidor (Google Cloud Run + PostgreSQL) para sincronizarlos entre dispositivos.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Retransmisión en directo (Cloud Firestore)</div><div class="perm-desc">Al iniciar una retransmisión en la nube, el marcador y los contadores anónimos de espectadores se guardan en Cloud Firestore. Los partidos sin finalizar se eliminan a las 24 horas y los finalizados a los 30 días.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Analítica e informes de fallos (Firebase Analytics y Crashlytics)</div><div class="perm-desc">Recopilamos eventos de uso anonimizados e informes de errores para mejorar la estabilidad. No vendemos datos ni usamos rastreadores publicitarios.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Eliminación de cuenta y datos</h2></div>
+      <p>Puedes eliminar permanentemente tu cuenta y todos los datos asociados en la nube (Firebase Auth, equipos y jugadores en PostgreSQL, retransmisiones en Firestore) desde <strong>Ajustes → Eliminar cuenta</strong>.</p>
+      <p>También puedes solicitar la eliminación escribiendo a <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>Permisos de la aplicación</h2></div>
+      <p>Algunas funciones requieren los siguientes permisos:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Cámara</div><div class="perm-desc">Solo para escanear códigos QR al conectarse a una retransmisión. No se graba ni se envía vídeo.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Red local (Wi-Fi / mDNS)</div><div class="perm-desc">Para retransmisiones locales mediante WebSocket y descubrimiento mDNS/Bonjour. El tráfico local no sale de tu red Wi-Fi.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Mantener pantalla encendida (Wakelock)</div><div class="perm-desc">Mantiene la pantalla activa durante el partido.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Audio</div><div class="perm-desc">Reproduce sonidos locales de silbato. Nunca se usa el micrófono.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Menores</h2></div>
+      <p>La aplicación no está dirigida a menores de 13 años (o la edad mínima aplicable en tu país). Si crees que un menor ha proporcionado datos personales, contáctanos para eliminarlos de inmediato.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Cambios en esta política</h2></div>
+      <p>Podemos actualizar esta Política periódicamente. La versión vigente siempre está disponible en esta URL con la fecha indicada arriba.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Contacto</h2></div>
+      <p>Si tienes preguntas sobre esta Política de Privacidad, escríbenos a:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /es -->
+  <!-- ══════════════════ ES-419 ══════════════════ -->
+  <div data-lang="es-419" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Fecha de entrada en vigor: 25 de noviembre de 2026</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Última actualización: 25 de noviembre de 2026</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Introducción</h2></div>
+      <p>Bienvenido a <strong>Volleyball Match</strong>, una app de marcador de voleibol y gestión de equipos. Puedes usar el marcador sin conexión ni cuenta, o iniciar sesión para sincronizar tus equipos entre dispositivos y transmitir partidos en vivo.</p>
+      <p>Esta Política de Privacidad describe qué datos procesamos, para qué se usan, cuánto tiempo se almacenan y cómo eliminarlos.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Datos que recopilamos y procesamos</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>El uso sin conexión no requiere cuenta.</strong> La sincronización en la nube y las transmisiones en vivo son funciones opcionales.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Almacenamiento local</div><div class="perm-desc">La configuración de partidos, los equipos temporales Quick Mix y la caché de lectura sin conexión se guardan en tu dispositivo (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Cuenta y autenticación (Firebase Authentication)</div><div class="perm-desc">Al iniciar sesión con Google o Apple, procesamos tu Firebase UID, correo electrónico y nombre visible. Las sesiones anónimas solo usan un UID aleatorio.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Sincronización en la nube (Google Cloud Run y PostgreSQL)</div><div class="perm-desc">Al iniciar sesión, tus equipos, plantillas y jugadores se almacenan en nuestro servidor (Google Cloud Run + PostgreSQL) para sincronizarlos entre tus dispositivos.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Transmisión en vivo (Cloud Firestore)</div><div class="perm-desc">Al iniciar una transmisión en la nube, el estado del marcador y los contadores anónimos de espectadores se guardan en Cloud Firestore. Los partidos sin finalizar se eliminan tras 24 horas y los finalizados tras 30 días.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Analítica y fallos (Firebase Analytics y Crashlytics)</div><div class="perm-desc">Recopilamos eventos de uso anonimizados y reportes de fallos para mejorar la estabilidad. No vendemos datos ni usamos rastreadores publicitarios.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Eliminación de cuenta y datos</h2></div>
+      <p>Puedes eliminar permanentemente tu cuenta y todos tus datos en la nube (Firebase Auth, equipos y jugadores en PostgreSQL, transmisiones en Firestore) desde <strong>Ajustes → Eliminar cuenta</strong>.</p>
+      <p>También puedes solicitar la eliminación escribiendo a <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>Permisos de la app</h2></div>
+      <p>Algunas funciones requieren estos permisos:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Cámara</div><div class="perm-desc">Solo para escanear códigos QR al unirte a una transmisión. Nunca se graba ni se envía video.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Red local (Wi-Fi / mDNS)</div><div class="perm-desc">Para transmisiones locales por WebSocket y detección mDNS/Bonjour. El tráfico local no sale de tu red Wi-Fi.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Mantener pantalla encendida (Wakelock)</div><div class="perm-desc">Mantiene la pantalla encendida durante el partido.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Audio</div><div class="perm-desc">Reproduce sonidos locales de silbato. El micrófono nunca se utiliza.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Menores de edad</h2></div>
+      <p>La app no está dirigida a menores de 13 años (o la edad mínima aplicable). Si un menor proporcionó datos personales, contáctanos para eliminarlos de inmediato.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Cambios en esta política</h2></div>
+      <p>Podemos actualizar esta Política ocasionalmente. La versión vigente siempre está publicada en esta URL.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Contacto</h2></div>
+      <p>Si tienes dudas sobre privacidad o tus datos, escríbenos a:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /es-419 -->
+  <!-- ══════════════════ FR ══════════════════ -->
+  <div data-lang="fr" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Date d'entrée en vigueur : 25 novembre 2026</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Dernière mise à jour : 25 novembre 2026</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Introduction</h2></div>
+      <p>Bienvenue dans <strong>Volleyball Match</strong> — une application de tableau de score et de gestion d'équipes de volley-ball. Vous pouvez l'utiliser hors ligne sans compte, ou vous connecter pour synchroniser vos équipes entre appareils et diffuser les scores en direct.</p>
+      <p>Cette Politique de confidentialité explique quelles données sont collectées, pourquoi elles sont traitées, leur durée de conservation et comment les supprimer.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Données collectées et traitées</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>L'utilisation hors ligne ne nécessite aucun compte.</strong> La synchronisation cloud et la diffusion en direct sont facultatives.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Stockage local</div><div class="perm-desc">Les paramètres de match, les équipes temporaires Quick Mix et le cache de lecture hors ligne sont stockés localement sur votre appareil (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Compte et authentification (Firebase Authentication)</div><div class="perm-desc">Lors de la connexion via Google ou Apple, nous traitons votre Firebase UID, votre adresse e-mail et votre nom d'affichage. Les sessions anonymes utilisent uniquement un UID aléatoire.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Synchronisation cloud (Google Cloud Run & PostgreSQL)</div><div class="perm-desc">Une fois connecté, vos équipes, effectifs et profils de joueurs sont enregistrés sur notre serveur (Google Cloud Run + PostgreSQL) pour la synchronisation multi-appareils.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Diffusion en direct (Cloud Firestore)</div><div class="perm-desc">Lors d'une diffusion cloud, le score du match et le compteur anonyme de spectateurs sont stockés dans Cloud Firestore. Les matchs non terminés sont supprimés après 24 heures, et les matchs terminés après 30 jours.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Statistiques et diagnostics (Firebase Analytics & Crashlytics)</div><div class="perm-desc">Nous collectons des événements d'utilisation anonymisés et des rapports de plantage pour améliorer la fiabilité. Nous ne vendons aucune donnée et n'utilisons aucun traceur publicitaire.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Suppression du compte et des données</h2></div>
+      <p>Vous pouvez supprimer définitivement votre compte et toutes les données cloud associées (Firebase Auth, équipes/joueurs dans PostgreSQL, diffusions Firestore) depuis <strong>Paramètres → Supprimer le compte</strong>.</p>
+      <p>Vous pouvez aussi demander la suppression par e-mail à <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>Autorisations de l'application</h2></div>
+      <p>Certaines fonctionnalités nécessitent les autorisations suivantes :</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Caméra</div><div class="perm-desc">Utilisée uniquement pour scanner les QR codes lors de la connexion à une diffusion. Aucune vidéo n'est enregistrée ni transmise.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Réseau local (Wi-Fi / mDNS)</div><div class="perm-desc">Utilisé pour la diffusion locale via WebSocket et la découverte mDNS/Bonjour. Le trafic local reste sur votre réseau Wi-Fi.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Écran actif (Wakelock)</div><div class="perm-desc">Empêche l'écran de se mettre en veille pendant un match.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Audio</div><div class="perm-desc">Lit des effets sonores locaux (sifflet). Le microphone n'est jamais utilisé.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Enfants</h2></div>
+      <p>L'application ne s'adresse pas aux enfants de moins de 13 ans (ou l'âge légal applicable). Si un enfant nous a transmis des données personnelles, contactez-nous pour leur suppression immédiate.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Modifications de la politique</h2></div>
+      <p>Nous pouvons mettre à jour cette Politique périodiquement. La version en vigueur est toujours disponible à cette URL.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Nous contacter</h2></div>
+      <p>Pour toute question concernant cette Politique de confidentialité :</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /fr -->
+  <!-- ══════════════════ IT ══════════════════ -->
+  <div data-lang="it" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Data di entrata in vigore: 25 novembre 2026</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Ultimo aggiornamento: 25 novembre 2026</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Introduzione</h2></div>
+      <p>Benvenuto in <strong>Volleyball Match</strong> — l'app segnapunti per pallavolo e gestione squadre. Puoi usare il segnapunti offline senza account oppure accedere per sincronizzare squadre e giocatori tra dispositivi e trasmettere le partite in diretta.</p>
+      <p>Questa Informativa sulla privacy descrive quali dati raccogliamo, perché li trattiamo, per quanto tempo vengono conservati e come eliminarli.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Dati raccolti e trattati</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>L'uso offline non richiede alcun account.</strong> La sincronizzazione cloud e le dirette sono funzionalità opzionali.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Archiviazione locale</div><div class="perm-desc">Le impostazioni della partita, le squadre temporanee Quick Mix e la cache di lettura offline sono salvate sul dispositivo (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Account e autenticazione (Firebase Authentication)</div><div class="perm-desc">Accedendo con Google o Apple trattiamo il tuo Firebase UID, indirizzo e-mail e nome visualizzato. Le sessioni anonime usano solo un UID casuale.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Sincronizzazione cloud (Google Cloud Run e PostgreSQL)</div><div class="perm-desc">Quando hai effettuato l'accesso, squadre, rose e profili giocatori sono salvati sul nostro server (Google Cloud Run + PostgreSQL) per sincronizzarli tra dispositivi.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Diretta partita (Cloud Firestore)</div><div class="perm-desc">Avviando una diretta cloud, il punteggio e i contatori anonimi degli spettatori vengono salvati in Cloud Firestore. Le partite non terminate vengono eliminate dopo 24 ore, quelle terminate dopo 30 giorni.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Analisi e crash report (Firebase Analytics e Crashlytics)</div><div class="perm-desc">Raccogliamo eventi di utilizzo anonimi e report di arresto anomalo per migliorare la stabilità. Non vendiamo dati e non usiamo tracker pubblicitari.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Eliminazione di account e dati</h2></div>
+      <p>Puoi eliminare definitivamente il tuo account e tutti i dati cloud associati (Firebase Auth, squadre e giocatori in PostgreSQL, dirette in Firestore) dall'app in <strong>Impostazioni → Elimina account</strong>.</p>
+      <p>Puoi anche richiedere la cancellazione scrivendo a <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>Autorizzazioni dell'app</h2></div>
+      <p>Alcune funzioni richiedono le seguenti autorizzazioni:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Fotocamera</div><div class="perm-desc">Usata solo per scansionare codici QR per collegarsi a una diretta. Nessun video viene registrato o inviato.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Rete locale (Wi-Fi / mDNS)</div><div class="perm-desc">Usata per la trasmissione locale tramite WebSocket e rilevamento mDNS/Bonjour. Il traffico locale non lascia la rete Wi-Fi.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Schermo sempre attivo (Wakelock)</div><div class="perm-desc">Mantiene acceso lo schermo durante la partita.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Audio</div><div class="perm-desc">Riproduce suoni locali del fischietto. Il microfono non viene mai utilizzato.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Minori</h2></div>
+      <p>L'app non è destinata a minori di 13 anni (o all'età minima prevista dalla legge locale). Se un minore ha fornito dati personali, contattaci per rimuoverli immediatamente.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Modifiche all'informativa</h2></div>
+      <p>Potremmo aggiornare periodicamente questa Informativa. La versione aggiornata è sempre disponibile a questo URL.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Contattaci</h2></div>
+      <p>Per domande su questa Informativa sulla privacy scrivici a:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /it -->
+  <!-- ══════════════════ PL ══════════════════ -->
+  <div data-lang="pl" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Data wejścia w życie: 25 listopada 2026 r.</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Ostatnia aktualizacja: 25 listopada 2026 r.</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Wprowadzenie</h2></div>
+      <p>Witamy w <strong>Volleyball Match</strong> — aplikacji tablicy wyników siatkówki i zarządzania drużynami. Możesz korzystać z tablicy offline bez logowania albo zalogować się, aby synchronizować drużyny między urządzeniami i transmitować mecze na żywo.</p>
+      <p>Niniejsza Polityka prywatności wyjaśnia, jakie dane przetwarzamy, w jakim celu, jak długo je przechowujemy oraz jak je usunąć.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Jakie dane zbieramy i przetwarzamy</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>Tryb offline nie wymaga konta.</strong> Synchronizacja w chmurze i transmisje na żywo są funkcjami opcjonalnymi.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Pamięć lokalna urządzenia</div><div class="perm-desc">Ustawienia meczów, tymczasowe drużyny Quick Mix oraz lokalna pamięć podręczna do odczytu offline są zapisywane na urządzeniu (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Konto i logowanie (Firebase Authentication)</div><div class="perm-desc">Podczas logowania przez Google lub Apple przetwarzamy Twój Firebase UID, adres e-mail i nazwę wyświetlaną. Sesje anonimowe używają wyłącznie losowego UID.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Synchronizacja w chmurze (Google Cloud Run i PostgreSQL)</div><div class="perm-desc">Po zalogowaniu zapisane drużyny, składy i profile zawodników są przechowywane na naszym serwerze (Google Cloud Run + PostgreSQL) w celu synchronizacji między urządzeniami.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Transmisja na żywo (Cloud Firestore)</div><div class="perm-desc">Po uruchomieniu transmisji w chmurze wynik meczu i anonimowy licznik widzów są zapisywane w Cloud Firestore. Niedokończone mecze są usuwane po 24 godzinach, a zakończone po 30 dniach.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Analityka i raporty błędów (Firebase Analytics i Crashlytics)</div><div class="perm-desc">Zbieramy zanonimizowane zdarzenia użycia i raporty awarii, aby poprawiać stabilność. Nie sprzedajemy danych ani nie używamy trackerów reklamowych.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Usunięcie konta i danych</h2></div>
+      <p>Możesz trwale usunąć swoje konto i wszystkie powiązane dane w chmurze (Firebase Auth, drużyny i zawodników w PostgreSQL, transmisje w Firestore) bezpośrednio w aplikacji: <strong>Ustawienia → Usuń konto</strong>.</p>
+      <p>Możesz też wysłać prośbę o usunięcie na adres <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>Uprawnienia aplikacji</h2></div>
+      <p>Niektóre funkcje wymagają następujących uprawnień:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Aparat</div><div class="perm-desc">Używany wyłącznie do skanowania kodów QR przy dołączaniu do transmisji. Obraz z kamery nie jest nagrywany ani wysyłany.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Sieć lokalna (Wi-Fi / mDNS)</div><div class="perm-desc">Używana do lokalnej transmisji przez WebSocket oraz wykrywania urządzeń przez mDNS/Bonjour. Ruch lokalny nie opuszcza sieci Wi-Fi.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Podtrzymanie ekranu (Wakelock)</div><div class="perm-desc">Zapobiega wygaszeniu ekranu podczas meczu.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Dźwięk</div><div class="perm-desc">Odtwarza lokalne dźwięki gwizdka. Mikrofon nigdy nie jest używany.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Dzieci</h2></div>
+      <p>Aplikacja nie jest skierowana do dzieci poniżej 13. roku życia (lub innego wymaganego wieku zgody). Jeśli dziecko przekazało dane osobowe, skontaktuj się z nami w celu ich natychmiastowego usunięcia.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Zmiany polityki</h2></div>
+      <p>Możemy okresowo aktualizować niniejszą Politykę. Aktualna wersja jest zawsze dostępna pod tym adresem URL.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Kontakt</h2></div>
+      <p>W razie pytań dotyczących prywatności napisz do nas:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /pl -->
+  <!-- ══════════════════ PT ══════════════════ -->
+  <div data-lang="pt" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Data de vigência: 25 de novembro de 2026</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Última atualização: 25 de novembro de 2026</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Introdução</h2></div>
+      <p>Bem-vindo ao <strong>Volleyball Match</strong> — um aplicativo de placar de vôlei e gerenciamento de equipes. Você pode usar o placar offline sem conta ou entrar para sincronizar suas equipes entre dispositivos e transmitir partidas ao vivo.</p>
+      <p>Esta Política de Privacidade explica quais dados coletamos, por que os processamos, por quanto tempo são armazenados e como excluí-los.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Dados que coletamos e processamos</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>O uso offline não exige conta.</strong> A sincronização na nuvem e as transmissões ao vivo são opcionais.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Armazenamento local</div><div class="perm-desc">Configurações de partida, equipes temporárias Quick Mix e cache local de leitura offline são armazenados no dispositivo (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Conta e autenticação (Firebase Authentication)</div><div class="perm-desc">Ao entrar com Google ou Apple, processamos seu Firebase UID, e-mail e nome de exibição. Sessões anônimas usam apenas um UID aleatório.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Sincronização na nuvem (Google Cloud Run e PostgreSQL)</div><div class="perm-desc">Quando conectado, suas equipes salvas, elencos e perfis de jogadores são armazenados em nosso servidor (Google Cloud Run + PostgreSQL) para sincronização entre dispositivos.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Transmissão ao vivo (Cloud Firestore)</div><div class="perm-desc">Ao iniciar uma transmissão na nuvem, o placar e a contagem anônima de espectadores são armazenados no Cloud Firestore. Partidas inacabadas são excluídas após 24 horas e finalizadas após 30 dias.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Análises e falhas (Firebase Analytics e Crashlytics)</div><div class="perm-desc">Coletamos eventos de uso anonimizados e relatórios de falhas para melhorar a estabilidade. Não vendemos dados nem usamos rastreadores de anúncios.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Exclusão de conta e dados</h2></div>
+      <p>Você pode excluir permanentemente sua conta e todos os dados na nuvem associados (Firebase Auth, equipes e jogadores no PostgreSQL, transmissões no Firestore) em <strong>Configurações → Excluir conta</strong>.</p>
+      <p>Também é possível solicitar a exclusão pelo e-mail <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>Permissões do aplicativo</h2></div>
+      <p>Alguns recursos exigem as seguintes permissões:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Câmera</div><div class="perm-desc">Usada apenas para escanear QR codes ao entrar em uma transmissão. Nenhum vídeo é gravado ou enviado.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Rede local (Wi-Fi / mDNS)</div><div class="perm-desc">Usada para transmissão local via WebSocket e descoberta mDNS/Bonjour. O tráfego local não sai da sua rede Wi-Fi.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Manter tela ligada (Wakelock)</div><div class="perm-desc">Mantém a tela acesa durante a partida.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Áudio</div><div class="perm-desc">Reproduz efeitos sonoros locais de apito. O microfone nunca é usado.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Crianças</h2></div>
+      <p>O aplicativo não é direcionado a menores de 13 anos (ou idade mínima aplicável). Caso uma criança tenha enviado dados pessoais, entre em contato para remoção imediata.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Alterações nesta política</h2></div>
+      <p>Podemos atualizar esta Política periodicamente. A versão atual está sempre disponível neste URL.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Contato</h2></div>
+      <p>Se tiver dúvidas sobre esta Política de Privacidade, entre em contato:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /pt -->
+  <!-- ══════════════════ TR ══════════════════ -->
+  <div data-lang="tr" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Yürürlük tarihi: 25 Kasım 2026</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Son güncelleme: 25 Kasım 2026</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Giriş</h2></div>
+      <p><strong>Volleyball Match</strong> uygulamasına hoş geldiniz — voleybol skor tabelası ve takım yönetimi uygulaması. Hesap oluşturmadan çevrimdışı kullanabilir veya cihazlar arası senkronizasyon ve canlı yayın için giriş yapabilirsiniz.</p>
+      <p>Bu Gizlilik Politikası hangi verilerin işlendiğini, neden kullanıldığını, ne kadar saklandığını ve nasıl silineceğini açıklar.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Topladığımız ve İşlediğimiz Veriler</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>Çevrimdışı kullanım hesap gerektirmez.</strong> Bulut senkronizasyonu ve canlı yayın isteğe bağlıdır.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Yerel Cihaz Depolaması</div><div class="perm-desc">Maç ayarları, geçici Quick Mix takımları ve çevrimdışı okuma önbelleği cihazınızda saklanır (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Hesap ve Kimlik Doğrulama (Firebase Authentication)</div><div class="perm-desc">Google veya Apple ile giriş yaptığınızda Firebase UID, e-posta adresi ve görünen adınız işlenir. Anonim oturumlar yalnızca rastgele bir UID kullanır.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Bulut Senkronizasyonu (Google Cloud Run & PostgreSQL)</div><div class="perm-desc">Giriş yaptığınızda kayıtlı takımlarınız ve oyuncu profilleriniz cihazlar arasında senkronizasyon için sunucumuzda (Google Cloud Run + PostgreSQL) saklanır.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Canlı Maç Yayını (Cloud Firestore)</div><div class="perm-desc">Bulut yayını başlattığınızda maç skoru ve anonim izleyici sayaçları Cloud Firestore'da tutulur. Tamamlanmayan maçlar 24 saat, tamamlananlar 30 gün sonra otomatik silinir.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Analitik ve Çökme Raporları (Firebase Analytics & Crashlytics)</div><div class="perm-desc">Uygulama kararlılığını artırmak için anonim kullanım olayları ve çökme raporları topluyoruz. Veri satmayız ve reklam izleyicisi kullanmayız.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Hesap ve Veri Silme</h2></div>
+      <p>Hesabınızı ve tüm bulut verilerinizi (Firebase Auth, PostgreSQL takımları/oyuncuları, Firestore yayınları) uygulama içinden kalıcı olarak silebilirsiniz: <strong>Ayarlar → Hesabı sil</strong>.</p>
+      <p>Ayrıca <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a> adresinden silme talebinde bulunabilirsiniz.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>Uygulama İzinleri</h2></div>
+      <p>Bazı özellikler şu izinleri gerektirir:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Kamera</div><div class="perm-desc">Yalnızca canlı yayına katılmak için QR kod taramada kullanılır. Video kaydedilmez veya gönderilmez.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Yerel Ağ (Wi-Fi / mDNS)</div><div class="perm-desc">WebSocket yerel yayını ve mDNS/Bonjour cihaz keşfi için kullanılır. Yerel trafik Wi-Fi ağınızdan dışarı çıkmaz.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Ekranı Açık Tutma (Wakelock)</div><div class="perm-desc">Maç sırasında ekranın kapanmasını önler.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Ses</div><div class="perm-desc">Yerel düdük seslerini çalar. Mikrofon asla kullanılmaz.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Çocuklar</h2></div>
+      <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir. Bir çocuğun kişisel veri paylaştığını düşünüyorsanız derhal silinmesi için bizimle iletişime geçin.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Politika Değişiklikleri</h2></div>
+      <p>Bu Politikayı zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu URL'de yer alır.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>İletişim</h2></div>
+      <p>Gizlilik ile ilgili sorularınız için bize ulaşın:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
   </div><!-- /tr -->
-
+  <!-- ══════════════════ FI ══════════════════ -->
+  <div data-lang="fi" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Voimaantulopäivä: 25. marraskuuta 2026</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Viimeksi päivitetty: 25. marraskuuta 2026</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Johdanto</h2></div>
+      <p>Tervetuloa <strong>Volleyball Match</strong> -sovellukseen — lentopallon tulostaulu- ja joukkueenhallintasovellukseen. Voit käyttää tulostaulua offline-tilassa ilman tiliä tai kirjautua synkronoidaksesi joukkueet laitteiden välillä ja lähettääksesi ottelut suorana.</p>
+      <p>Tämä tietosuojaseloste kuvaa, mitä tietoja käsittelemme, miksi niitä käsitellään, kuinka kauan niitä säilytetään ja miten voit poistaa ne.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Keräämämme ja käsittelemämme tiedot</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>Offline-käyttö ei vaadi tiliä.</strong> Pilvisynkronointi ja suoratoisto ovat valinnaisia ominaisuuksia.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Laitteen paikallinen tallennustila</div><div class="perm-desc">Otteluasetukset, väliaikaiset Quick Mix -joukkueet ja offline-lukuvälimuisti tallennetaan paikallisesti laitteellesi (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Tili ja kirjautuminen (Firebase Authentication)</div><div class="perm-desc">Kun kirjaudut Google- tai Apple-tilillä, käsittelemme Firebase UID -tunnuksesi, sähköpostiosoitteesi ja näyttönimesi. Anonyymit istunnot käyttävät vain satunnaista UID-tunnusta.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Pilvisynkronointi (Google Cloud Run & PostgreSQL)</div><div class="perm-desc">Kirjautuneena tallennetut joukkueet, kokoonpanot ja pelaajaprofiilit tallennetaan palvelimellemme (Google Cloud Run + PostgreSQL) laitteiden välistä synkronointia varten.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Ottelun live-lähetys (Cloud Firestore)</div><div class="perm-desc">Pilvilähetyksen aikana ottelun tila ja anonyymit katsojalaskurit tallennetaan Cloud Firestoreen. Keskeneräiset ottelut poistetaan 24 tunnin ja päättyneet 30 päivän kuluttua.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Analytiikka ja kaatumisraportit (Firebase Analytics & Crashlytics)</div><div class="perm-desc">Keräämme anonymisoituja käyttötapahtumia ja kaatumisraportteja vakauden parantamiseksi. Emme myy tietoja emmekä käytä mainosseurantaa.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Tilin ja tietojen poistaminen</h2></div>
+      <p>Voit poistaa tilisi ja kaikki siihen liittyvät pilvitiedot (Firebase Auth, PostgreSQL-tiedot, Firestore-lähetykset) pysyvästi sovelluksessa: <strong>Asetukset → Poista tili</strong>.</p>
+      <p>Voit myös pyytää tietojen poistoa osoitteesta <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>Sovelluksen käyttöoikeudet</h2></div>
+      <p>Tietyt ominaisuudet vaativat seuraavat luvat:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Kamera</div><div class="perm-desc">Käytetään vain QR-koodien lukemiseen lähetykseen liityttäessä. Videota ei tallenneta eikä lähetetä.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Paikallisverkko (Wi-Fi / mDNS)</div><div class="perm-desc">Käytetään paikalliseen WebSocket-lähetykseen ja mDNS/Bonjour-laitetunnistukseen. Paikallinen liikenne pysyy omassa Wi-Fi-verkossasi.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Pidä näyttö päällä (Wakelock)</div><div class="perm-desc">Estää näytön sammumisen ottelun aikana.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Ääni</div><div class="perm-desc">Toistaa paikallisia pilliääniä. Mikrofonia ei koskaan käytetä.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Lapset</h2></div>
+      <p>Sovellusta ei ole suunnattu alle 13-vuotiaille lapsille. Jos lapsi on antanut henkilötietoja, ota yhteyttä tietojen välitöntä poistamista varten.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Muutokset selosteeseen</h2></div>
+      <p>Voimme päivittää tätä tietosuojaselostetta ajoittain. Ajantasainen versio on aina saatavilla tässä osoitteessa.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Ota yhteyttä</h2></div>
+      <p>Jos sinulla on kysyttävää tietosuojasta, ota yhteyttä:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /fi -->
+  <!-- ══════════════════ ID ══════════════════ -->
+  <div data-lang="id" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> Tanggal berlaku: 25 November 2026</div>
+      <div class="meta-chip"><span class="icon">🔄</span> Pembaruan terakhir: 25 November 2026</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>Pendahuluan</h2></div>
+      <p>Selamat datang di <strong>Volleyball Match</strong> — aplikasi papan skor bola voli dan pengelolaan tim. Anda dapat menggunakannya secara offline tanpa akun, atau masuk untuk menyinkronkan tim antar perangkat dan menyiarkan skor langsung.</p>
+      <p>Kebijakan Privasi ini menjelaskan data apa yang kami kumpulkan, mengapa diproses, berapa lama disimpan, dan cara menghapusnya.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>Data yang Kami Kumpulkan dan Proses</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>Penggunaan offline tidak memerlukan akun.</strong> Sinkronisasi cloud dan siaran langsung adalah fitur opsional.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">Penyimpanan Lokal Perangkat</div><div class="perm-desc">Pengaturan pertandingan, tim sementara Quick Mix, dan cache baca offline disimpan secara lokal di perangkat Anda (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">Akun & Autentikasi (Firebase Authentication)</div><div class="perm-desc">Saat masuk dengan Google atau Apple, kami memproses Firebase UID, alamat email, dan nama tampilan Anda. Sesi anonim hanya menggunakan UID acak.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">Sinkronisasi Cloud (Google Cloud Run & PostgreSQL)</div><div class="perm-desc">Saat masuk, tim tersimpan, daftar pemain, dan profil pemain disimpan di server kami (Google Cloud Run + PostgreSQL) untuk sinkronisasi antar perangkat.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Siaran Langsung Pertandingan (Cloud Firestore)</div><div class="perm-desc">Saat memulai siaran cloud, skor pertandingan dan penghitung penonton anonim disimpan di Cloud Firestore. Pertandingan yang belum selesai dihapus otomatis setelah 24 jam, dan yang selesai setelah 30 hari.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">Analitik & Laporan Kerusakan (Firebase Analytics & Crashlytics)</div><div class="perm-desc">Kami mengumpulkan data penggunaan anonim dan laporan kerusakan untuk meningkatkan stabilitas. Kami tidak menjual data atau menggunakan pelacak iklan.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>Penghapusan Akun & Data</h2></div>
+      <p>Anda dapat menghapus akun dan semua data cloud terkait secara permanen (Firebase Auth, data PostgreSQL, siaran Firestore) melalui <strong>Pengaturan → Hapus akun</strong>.</p>
+      <p>Anda juga dapat meminta penghapusan melalui email <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>Izin Aplikasi</h2></div>
+      <p>Beberapa fitur memerlukan izin berikut:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">Kamera</div><div class="perm-desc">Hanya untuk memindai kode QR saat bergabung ke siaran skor. Video tidak pernah direkam atau dikirim.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">Jaringan Lokal (Wi-Fi / mDNS)</div><div class="perm-desc">Untuk siaran lokal via WebSocket dan penemuan perangkat mDNS/Bonjour. Lalu lintas lokal tidak keluar dari jaringan Wi-Fi Anda.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">Layar Tetap Menyala (Wakelock)</div><div class="perm-desc">Menjaga layar tetap menyala selama pertandingan.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">Audio</div><div class="perm-desc">Memutar suara peluit lokal. Mikrofon tidak pernah digunakan.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>Anak-anak</h2></div>
+      <p>Aplikasi ini tidak ditujukan untuk anak di bawah 13 tahun. Jika ada data anak yang terkumpul, hubungi kami untuk penghapusan segera.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>Perubahan Kebijakan</h2></div>
+      <p>Kami dapat memperbarui Kebijakan ini sewaktu-waktu. Versi terbaru selalu tersedia di URL ini.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>Hubungi Kami</h2></div>
+      <p>Jika ada pertanyaan tentang Kebijakan Privasi ini, hubungi kami di:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /id -->
+  <!-- ══════════════════ JA ══════════════════ -->
+  <div data-lang="ja" dir="ltr" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> 発効日: 2026年11月25日</div>
+      <div class="meta-chip"><span class="icon">🔄</span> 最終更新日: 2026年11月25日</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>はじめに</h2></div>
+      <p><strong>Volleyball Match</strong> は、バレーボールのスコアボードおよびチーム管理アプリです。アカウントなしでオフライン利用ができるほか、ログインしてチームや選手を端末間で同期したり、試合スコアをライブ配信したりできます。</p>
+      <p>本プライバシーポリシーでは、収集・処理するデータの内容、利用目的、保存期間、および削除方法について説明します。</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>収集および処理するデータ</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>オフライン利用にアカウントは不要です。</strong>クラウド同期とライブ配信は任意の機能です。</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">端末内のローカル保存</div><div class="perm-desc">試合設定、一時的なQuick Mixチーム、およびオフライン閲覧用キャッシュは端末内（SharedPreferences）に保存されます。</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">アカウントと認証（Firebase Authentication）</div><div class="perm-desc">GoogleまたはAppleでログインした場合、Firebase UID、メールアドレス、表示名を処理します。匿名セッションではランダムなUIDのみを使用します。</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">チーム・選手のクラウド同期（Google Cloud Run / PostgreSQL）</div><div class="perm-desc">ログイン中は、保存されたチーム、メンバー表、選手プロフィールを端末間で同期するため、当社サーバー（Google Cloud Run + PostgreSQL）に保存します。</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">ライブ試合配信（Cloud Firestore）</div><div class="perm-desc">クラウド配信を開始すると、試合スコアと匿名の視聴者数がCloud Firestoreに保存されます。未完了の試合は24時間後、終了した試合は30日後に自動削除されます。</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">解析とクラッシュ診断（Firebase Analytics / Crashlytics）</div><div class="perm-desc">安定性向上のため、匿名化された利用イベントとクラッシュレポートを収集します。データの販売や広告トラッカーの利用は行いません。</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>アカウントとデータの削除</h2></div>
+      <p>アプリ内の <strong>設定 → アカウントを削除</strong> から、アカウントおよび関連するすべてのクラウドデータ（Firebase Auth、PostgreSQL上のデータ、Firestore配信データ）をいつでも完全に削除できます。</p>
+      <p><a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a> 宛てにメールで削除を依頼することもできます。</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>アプリの権限</h2></div>
+      <p>一部機能のために以下の権限が必要です：</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">カメラ</div><div class="perm-desc">配信参加時のQRコード読み取りにのみ使用します。映像の録画や送信は行いません。</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">ローカルネットワーク（Wi-Fi / mDNS）</div><div class="perm-desc">WebSocketによるローカル配信とmDNS/Bonjour機器検出に使用します。通信はWi-Fiネットワーク外に出ません。</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">画面スリープ防止（Wakelock）</div><div class="perm-desc">試合中に画面が消えないようにします。</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">オーディオ</div><div class="perm-desc">端末内のホイッスル効果音を再生します。マイクは一切使用しません。</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>お子様のプライバシー</h2></div>
+      <p>本アプリは13歳未満のお子様を対象としていません。万一お子様の個人情報が提供された場合は、速やかに削除するためご連絡ください。</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>ポリシーの変更</h2></div>
+      <p>本ポリシーは随時更新される場合があります。最新版は常にこのURLで公開されます。</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>お問い合わせ</h2></div>
+      <p>本プライバシーポリシーに関するお問い合わせ先：</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /ja -->
+  <!-- ══════════════════ AR ══════════════════ -->
+  <div data-lang="ar" dir="rtl" class="">
+    <div class="meta-bar">
+      <div class="meta-chip"><span class="icon">📅</span> تاريخ السريان: 25 نوفمبر 2026</div>
+      <div class="meta-chip"><span class="icon">🔄</span> آخر تحديث: 25 نوفمبر 2026</div>
+    </div>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👋</div><h2>مقدمة</h2></div>
+      <p>مرحبًا بك في <strong>Volleyball Match</strong> — تطبيق لوحة نتائج الكرة الطائرة وإدارة الفرق. يمكنك استخدام التطبيق دون إنترنت ودون حساب، أو تسجيل الدخول لمزامنة فرقك ولاعبيك عبر أجهزتك وبث نتائج المباريات مباشرة.</p>
+      <p>توضح سياسة الخصوصية هذه البيانات التي نعالجها وسبب معالجتها ومدة الاحتفاظ بها وكيفية حذفها.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">☁️</div><h2>البيانات التي نجمعها ونعالجها</h2></div>
+      <div class="highlight"><span class="highlight-icon">ℹ️</span><p><strong>الاستخدام دون إنترنت لا يتطلب حسابًا.</strong> المزامنة السحابية والبث المباشر ميزات اختيارية.</p></div>
+      <ul class="perm-list" style="margin-top:16px;">
+          <li class="perm-item"><span class="perm-icon">📱</span><div><div class="perm-name">التخزين المحلي على الجهاز</div><div class="perm-desc">تُحفظ إعدادات المباراة والفرق المؤقتة Quick Mix وذاكرة القراءة دون إنترنت محليًا على جهازك (SharedPreferences).</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔐</span><div><div class="perm-name">الحساب والمصادقة (Firebase Authentication)</div><div class="perm-desc">عند تسجيل الدخول عبر Google أو Apple، نعالج معرّف Firebase UID وعنوان البريد الإلكتروني واسم العرض. تستخدم الجلسات المجهولة معرّف UID عشوائيًا فقط.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">☁️</span><div><div class="perm-name">المزامنة السحابية للفرق واللاعبين (Google Cloud Run وPostgreSQL)</div><div class="perm-desc">عند تسجيل الدخول، تُحفظ الفرق المحفوظة والتشكيلات وملفات اللاعبين على خادمنا (Google Cloud Run + PostgreSQL) للمزامنة بين أجهزتك.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">البث المباشر للمباريات (Cloud Firestore)</div><div class="perm-desc">عند بدء البث السحابي، تُخزن حالة المباراة وعدادات المشاهدين المجهولين في Cloud Firestore. تُحذف المباريات غير المكتملة تلقائيًا بعد 24 ساعة، والمكتملة بعد 30 يومًا.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📊</span><div><div class="perm-name">التحليلات وتقارير الأعطال (Firebase Analytics وCrashlytics)</div><div class="perm-desc">نجمع أحداث استخدام مجهولة الهوية وتقارير أعطال لتحسين الاستقرار. لا نبيع بياناتك ولا نستخدم أدوات تتبع إعلانية.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🗑️</div><h2>حذف الحساب والبيانات</h2></div>
+      <p>يمكنك حذف حسابك وجميع البيانات السحابية المرتبطة به نهائيًا (حساب Firebase Auth وبيانات PostgreSQL وبثوث Firestore) من داخل التطبيق عبر <strong>الإعدادات ← حذف الحساب</strong>.</p>
+      <p>يمكنك أيضًا طلب الحذف عبر البريد الإلكتروني <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a>.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">🔑</div><h2>أذونات التطبيق</h2></div>
+      <p>تتطلب بعض الميزات الأذونات التالية:</p>
+      <ul class="perm-list">
+          <li class="perm-item"><span class="perm-icon">📷</span><div><div class="perm-name">الكاميرا</div><div class="perm-desc">تُستخدم فقط لمسح رموز QR عند الانضمام إلى بث النتيجة. لا يتم تسجيل الفيديو أو إرساله أبدًا.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">📡</span><div><div class="perm-name">الشبكة المحلية (Wi-Fi / mDNS)</div><div class="perm-desc">تُستخدم للبث المحلي عبر WebSocket واكتشاف الأجهزة عبر mDNS/Bonjour. لا يغادر البث المحلي شبكة Wi-Fi الخاصة بك.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">💡</span><div><div class="perm-name">إبقاء الشاشة قيد التشغيل (Wakelock)</div><div class="perm-desc">يحافظ على إضاءة الشاشة أثناء المباراة.</div></div></li>
+          <li class="perm-item"><span class="perm-icon">🔊</span><div><div class="perm-name">الصوت</div><div class="perm-desc">يشغّل أصوات الصفارة المحلية. لا يتم استخدام الميكروفون مطلقًا.</div></div></li>
+      </ul>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">👶</div><h2>الأطفال</h2></div>
+      <p>التطبيق غير موجه للأطفال دون سن 13 عامًا. إذا قدم طفل بيانات شخصية، يُرجى التواصل معنا لحذفها فورًا.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">📝</div><h2>تحديثات السياسة</h2></div>
+      <p>قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. تتوفر أحدث نسخة دائمًا على هذا الرابط.</p>
+    </div></section>
+    <section><div class="section-card">
+      <div class="section-header"><div class="section-icon">✉️</div><h2>تواصل معنا</h2></div>
+      <p>للاستفسارات حول الخصوصية أو بياناتك، تواصل معنا عبر:</p>
+      <p>📧 <a class="contact-link" href="mailto:support@volleyball-match.app">support@volleyball-match.app</a></p>
+    </div></section>
+  </div><!-- /ar -->
 </main>
-
 <footer>
-  <p>© 2025 Volleyball Match. All rights reserved.</p>
-  <p style="margin-top:6px;">
-    <a href="#top">↑ Back to top</a>
-  </p>
+  <p>© 2026 Volleyball Match. All rights reserved.</p>
+  <p style="margin-top:6px;"><a href="#top">↑ Top</a></p>
 </footer>
-
 <script>
+  const SUPPORTED = new Set(['en', 'ru', 'uk', 'de', 'es', 'es-419', 'fr', 'it', 'pl', 'pt', 'tr', 'fi', 'id', 'ja', 'ar']);
   function switchLang(lang) {
+    if (!SUPPORTED.has(lang)) return;
     document.querySelectorAll('[data-lang]').forEach(el => {
       el.classList.toggle('visible', el.getAttribute('data-lang') === lang);
     });
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.id === 'btn-' + lang);
     });
-    // Remember preference
+    document.documentElement.lang = lang;
     try { localStorage.setItem('pp_lang', lang); } catch(e) {}
   }
-
-  // Restore preferred language
-  try {
-    const saved = localStorage.getItem('pp_lang');
-    if (saved && (saved === 'ru' || saved === 'en' || saved === 'tr')) switchLang(saved);
-  } catch(e) {}
+  (function initLang() {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const q = params.get('lang');
+      if (q && SUPPORTED.has(q)) { switchLang(q); return; }
+      const saved = localStorage.getItem('pp_lang');
+      if (saved && SUPPORTED.has(saved)) { switchLang(saved); return; }
+      const nav = (navigator.language || 'en').toLowerCase();
+      if (nav.startsWith('es-') && nav !== 'es-es' && SUPPORTED.has('es-419')) {
+        switchLang('es-419');
+        return;
+      }
+      const short = nav.split('-')[0];
+      if (SUPPORTED.has(short)) switchLang(short);
+    } catch(e) {}
+  })();
 </script>
 </body>
 </html>
